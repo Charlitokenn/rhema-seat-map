@@ -97,80 +97,113 @@ export default function ServiceLegend({ compact = false }) {
   // ── COMPACT — mobile bottom bar ───────────────────────────────────────────
   if (compact) {
     return (
-        <div className="flex items-center gap-2 px-4 py-2.5 bg-background border-t">
-        <span className="text-xs font-semibold text-foreground truncate flex-shrink-0">
+        <div className="flex flex-col gap-2 px-4 py-3 bg-background border-t sm:flex-row sm:items-center">
+
+          {/* LEFT SIDE (title + stats) */}
+          <div className="flex items-center justify-between gap-2 w-full sm:w-auto">
+
+        <span className="text-xs font-semibold text-foreground truncate">
           {serviceName}
         </span>
-          <div className="flex items-center gap-2 text-xs font-bold flex-1 flex-wrap">
-            <div className="flex items-center">
-              <img src="/man.png" alt="man" width={28} height={28} />
-              <span className="flex flex-col text-blue-600">{counts.men}</span>
+
+            <div className="flex items-center gap-3 text-xs font-bold flex-wrap">
+
+              <div className="flex items-center gap-1">
+                <img src="/man.png" className="w-5 h-5 sm:w-6 sm:h-6" />
+                <span className="text-blue-600">{counts.men}</span>
+              </div>
+
+              <div className="flex items-center gap-1">
+                <img src="/woman.png" className="w-5 h-5 sm:w-6 sm:h-6" />
+                <span className="text-pink-600">{counts.women}</span>
+              </div>
+
+              <div className="flex items-center gap-1">
+                <img src="/child.png" className="w-5 h-5 sm:w-6 sm:h-6" />
+                <span className="text-yellow-600">{counts.children}</span>
+              </div>
+
+              <div className="text-muted-foreground font-normal">
+                = <strong className="text-foreground">{counts.total}</strong>
+              </div>
+
             </div>
-            <div className="flex items-center">
-              <img src="/woman.png" alt="woman" width={28} height={28} />
-              <span className="text-pink-600">{counts.women}</span>
-            </div>
-            <div className="flex items-center">
-              <img src="/child.png" alt="child" width={24} height={24} />
-              <span className="text-yellow-600">{counts.children}</span>
-            </div>
-            <div className="text-muted-foreground font-normal">
-            = <strong className="text-foreground">{counts.total}</strong>
           </div>
+
+          {/* RIGHT SIDE (ACTIONS) */}
+          <div className="flex flex-col sm:flex-row sm:ml-auto gap-2 w-full sm:w-auto">
+
+            {/* Clear */}
+            <Popover>
+              <PopoverTrigger asChild>
+                <Button
+                    variant="ghost"
+                    className="w-full sm:w-auto text-muted-foreground hover:text-destructive hover:bg-destructive/10 gap-1.5"
+                >
+                  <RotateCcw className="h-3.5 w-3.5" />
+                  Clear filled seats
+                </Button>
+              </PopoverTrigger>
+
+              <PopoverContent>
+                <p className="text-xs font-semibold text-center mb-2.5">
+                  Clear all {counts.total} seat assignments?
+                </p>
+                <Button
+                    variant="destructive"
+                    size="sm"
+                    className="w-full text-xs"
+                    onClick={handleReset}
+                >
+                  <Trash2 className="w-4 h-4 mr-1" />
+                  Yes, clear all
+                </Button>
+              </PopoverContent>
+            </Popover>
+
+            {/* Submit */}
+            <Popover>
+              <PopoverTrigger asChild>
+                <Button
+                    size="sm"
+                    className="w-full sm:w-auto text-xs"
+                    variant={savedOk ? "secondary" : "default"}
+                    disabled={saving || counts.total === 0 || !isOnline}
+                >
+                  Submit
+                </Button>
+              </PopoverTrigger>
+
+              <PopoverContent className="w-64 flex flex-col gap-2 items-center">
+                <p className="text-sm font-bold">Please Confirm</p>
+                <span className="text-xs text-muted-foreground text-center">
+              Are you sure about this submission?
+            </span>
+
+                <Button
+                    size="sm"
+                    className="w-full text-xs"
+                    onClick={handleSave}
+                    disabled={saving || counts.total === 0 || !isOnline}
+                >
+                  {saving ? (
+                      <>
+                        <Loader2 className="h-4 w-4 animate-spin mr-1" />
+                        Saving…
+                      </>
+                  ) : savedOk ? (
+                      <>
+                        <CheckCircle2 className="h-4 w-4 mr-1" />
+                        Saved
+                      </>
+                  ) : (
+                      "Yes, Submit"
+                  )}
+                </Button>
+              </PopoverContent>
+            </Popover>
+
           </div>
-            <Popover>
-                <PopoverTrigger>
-                  <Button
-                      variant="ghost"
-                      className="w-full text-muted-foreground hover:text-destructive hover:bg-destructive/10 gap-1.5"
-                  >
-                    <RotateCcw className="h-3.5 w-3.5" />
-                    Clear filled seats
-                  </Button>
-                </PopoverTrigger>
-                <PopoverContent>
-                  <p className="text-xs font-semibold text-center mb-2.5">
-                    Clear all {counts.total} seat assignments?
-                  </p>
-                  <Button
-                      variant="default"
-                      size="sm"
-                      className="flex-1 text-xs py-1 bg-destructive"
-                      onClick={handleReset}
-                  >
-                    <Trash2/>Yes, clear all
-                  </Button>
-                </PopoverContent>
-              </Popover>
-            <Popover>
-              <PopoverTrigger>
-              <Button
-                  size="sm"
-                  className="flex-shrink-0 h-7 px-3 text-xs"
-                  variant={savedOk ? 'secondary' : 'default'}
-                  disabled={saving || counts.total === 0 || !isOnline}
-              >
-               Submit
-              </Button>
-            </PopoverTrigger>
-              <PopoverContent className="flex flex-col gap-2 items-center justify-center">
-              <p className="text-lg font-bold">Please Confirm</p>
-              <span className="text-md text-muted-foreground">
-                Are you sure about this submission?
-              </span>
-              <Button
-                  size="sm"
-                  className="flex-shrink-0 h-7 px-3 text-xs"
-                  variant={savedOk ? 'secondary' : 'default'}
-                  disabled={saving || counts.total === 0 || !isOnline}
-                  onClick={handleSave}
-              >
-                {saving   ? <><Loader2 className="h-4 w-4 animate-spin" /> Saving…</>
-                    : savedOk ? <><CheckCircle2 className="h-4 w-4" /> Service records saved</>
-                        :          "Yes, Submit" }
-              </Button>
-            </PopoverContent>
-          </Popover>
         </div>
     )
   }
