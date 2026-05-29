@@ -1,9 +1,9 @@
 import React, { useState, useMemo } from 'react'
-import { useChurchStore } from '../../store/churchStore.js'
-import { useUiStore } from '../../store/uiStore.js'
-import { useOnlineStatus } from '../../hooks/useOnlineStatus.js'
-import { gasRequest } from '../../lib/appsScript.js'
-import { TOTAL_SEATS } from '../../data/churchLayout.js'
+import { useChurchStore } from '@/store/churchStore.js'
+import { useUiStore } from '@/store/uiStore.js'
+import { useOnlineStatus } from '@/hooks/useOnlineStatus.js'
+import { gasRequest } from '@/lib/appsScript.js'
+import { TOTAL_SEATS } from '@/data/churchLayout.js'
 import { Button } from './button'
 import { Progress } from './progress'
 import { Separator } from './separator'
@@ -109,17 +109,17 @@ export default function ServiceLegend({ compact = false }) {
             <div className="flex items-center gap-3 text-xs font-bold flex-wrap">
 
               <div className="flex items-center gap-1">
-                <img src="/man.png" className="w-5 h-5 sm:w-6 sm:h-6" />
+                <img src="/man.png" alt="Man" className="w-5 h-5 sm:w-6 sm:h-6" />
                 <span className="text-blue-600">{counts.men}</span>
               </div>
 
               <div className="flex items-center gap-1">
-                <img src="/woman.png" className="w-5 h-5 sm:w-6 sm:h-6" />
+                <img src="/woman.png" alt="Woman" className="w-5 h-5 sm:w-6 sm:h-6" />
                 <span className="text-pink-600">{counts.women}</span>
               </div>
 
               <div className="flex items-center gap-1">
-                <img src="/child.png" className="w-5 h-5 sm:w-6 sm:h-6" />
+                <img src="/child.png" alt="Child" className="w-5 h-5 sm:w-6 sm:h-6" />
                 <span className="text-yellow-600">{counts.children}</span>
               </div>
 
