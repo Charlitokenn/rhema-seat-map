@@ -8,6 +8,7 @@ import {
 } from '@/components/ui/dialog'
 import { Smartphone, Share, PlusSquare } from 'lucide-react'
 import {DialogTrigger} from "./dialog";
+import {AppConfig} from "@/lib/constants.js";
 
 export default function InstallPrompt() {
   const { isInstallable, promptInstall, isInstalled } = useInstallPrompt()
@@ -38,7 +39,7 @@ export default function InstallPrompt() {
             <DialogTrigger></DialogTrigger>
             <DialogContent className="max-w-sm">
               <DialogHeader>
-                <DialogTitle>Install Venue Map</DialogTitle>
+                <DialogTitle>Install {AppConfig.name}</DialogTitle>
                 <DialogDescription>
                   Add to Home Screen for the best experience.
                 </DialogDescription>
@@ -76,7 +77,7 @@ export default function InstallPrompt() {
               🗺️
             </div>
             <div className="flex-1 min-w-0">
-              <p className="font-semibold text-sm text-foreground">Install Venue Map</p>
+              <p className="font-semibold text-sm text-foreground">Install {AppConfig.name}</p>
               <p className="text-xs text-muted-foreground">Works offline · Fast · No app store</p>
             </div>
             <div className="flex flex-col gap-1.5 flex-shrink-0">
