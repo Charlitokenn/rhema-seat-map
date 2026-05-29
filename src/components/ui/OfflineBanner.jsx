@@ -13,7 +13,7 @@ export default function OfflineBanner() {
         >
             <WifiOff className="h-4 w-4 text-amber-500" />
             <AlertDescription className="text-sm font-medium text-amber-800">
-                Offline — changes save locally. Reconnect to sync to Database
+                Offline — changes save on your device. Reconnect to sync to Database
             </AlertDescription>
         </Alert>
     )
