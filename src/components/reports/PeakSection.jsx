@@ -1,6 +1,13 @@
 /**
  * PeakSection.jsx
  * Highest + lowest attendance dates, best service types.
+ *
+ * Mobile changes:
+ *  - PeakTable wrapper changed from `overflow-hidden` to `overflow-x-auto`
+ *    so the 4-column table (#, Date, Service, Total) can scroll horizontally
+ *    rather than collapsing on narrow screens.
+ *  - `whitespace-nowrap` added to Date cells to prevent mid-date line breaks.
+ *  - min-w added to the table so columns don't squeeze below readable size.
  */
 import React from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
@@ -15,7 +22,7 @@ import {
 } from '@/components/ui/chart'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Cell } from 'recharts'
 import { Flame, Snowflake, Award } from 'lucide-react'
-import {formatDate} from "@/lib/utils.js";
+import { formatDate } from '@/lib/utils.js'
 
 const PEAK_CONFIG = { total: { label: 'Total', color: 'hsl(var(--chart-1))' } }
 
@@ -26,8 +33,12 @@ function PeakTable({ rows, variant }) {
     : ['bg-red-500','bg-red-400','bg-red-300','bg-red-200','bg-red-100']
 
   return (
-    <div className="rounded-lg border overflow-hidden">
-      <Table>
+    /*
+     * overflow-x-auto (not overflow-hidden) lets the 4-column table scroll
+     * sideways on narrow screens instead of being clipped or squished.
+     */
+    <div className="rounded-lg border overflow-x-auto">
+      <Table className="min-w-[280px]">
         <TableHeader>
           <TableRow className="bg-muted/50">
             <TableHead className="text-xs py-2">#</TableHead>
@@ -44,9 +55,14 @@ function PeakTable({ rows, variant }) {
                   {i + 1}
                 </span>
               </TableCell>
-              <TableCell className="py-2 text-muted-foreground">{formatDate(r.date)}</TableCell>
+              {/* whitespace-nowrap prevents formatted dates from line-breaking */}
+              <TableCell className="py-2 text-muted-foreground whitespace-nowrap">
+                {formatDate(r.date)}
+              </TableCell>
               <TableCell className="py-2">
-                <Badge variant="outline" className="text-[10px] font-normal">{r.service}</Badge>
+                <Badge variant="outline" className="text-[10px] font-normal whitespace-nowrap">
+                  {r.service}
+                </Badge>
               </TableCell>
               <TableCell className="py-2 text-right font-bold">
                 {r.total}
@@ -63,13 +79,12 @@ export default function PeakSection({ analytics, isLoading }) {
   const { peaks, byServiceType } = analytics
   const { highest = [], lowest = [] } = peaks
 
-  // Bar chart: top 5 by service type
   const topServices = byServiceType.slice(0, 6)
 
   return (
     <div className="space-y-6">
 
-      {/* Highest/lowest grids */}
+      {/* Highest / lowest grids */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <Card>
           <CardHeader className="pb-3">
@@ -106,7 +121,7 @@ export default function PeakSection({ analytics, isLoading }) {
         </Card>
       </div>
 
-      {/* Service type performance bar */}
+      {/* Best performing service type — horizontal bar chart */}
       <Card>
         <CardHeader className="pb-2">
           <CardTitle className="text-sm flex items-center gap-2">
@@ -128,7 +143,14 @@ export default function PeakSection({ analytics, isLoading }) {
                   >
                     <CartesianGrid horizontal={false} stroke="hsl(var(--border))" />
                     <XAxis type="number" tick={{ fontSize: 10 }} tickLine={false} axisLine={false} />
-                    <YAxis type="category" dataKey="service" tick={{ fontSize: 10 }} tickLine={false} axisLine={false} width={110} />
+                    <YAxis
+                      type="category"
+                      dataKey="service"
+                      tick={{ fontSize: 10 }}
+                      tickLine={false}
+                      axisLine={false}
+                      width={110}
+                    />
                     <ChartTooltip content={<ChartTooltipContent />} />
                     <Bar dataKey="total" radius={[0, 4, 4, 0]} maxBarSize={28}>
                       {topServices.map((_, i) => {

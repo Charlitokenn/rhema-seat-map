@@ -1,6 +1,12 @@
 /**
  * OverviewSection.jsx
  * Four KPI cards + a recent services table.
+ *
+ * Mobile changes:
+ *  - Demographic KPI grid: grid-cols-3 → grid-cols-1 sm:grid-cols-3
+ *    (98px/card in 3-col is too narrow for text-3xl numbers)
+ *  - Recent services table: hide Men / Women / Children columns on mobile,
+ *    show Date + Service + Total only (3 readable columns)
  */
 import React from 'react'
 import KpiCard from './KpiCard.jsx'
@@ -13,7 +19,7 @@ import { Badge } from '@/components/ui/badge'
 import {
   Users, UserCheck, CalendarDays, TrendingUp,
 } from 'lucide-react'
-import { formatDate} from '@/lib/utils'
+import { formatDate } from '@/lib/utils'
 
 export default function OverviewSection({ analytics, records, isLoading }) {
   const { kpi } = analytics
@@ -24,7 +30,8 @@ export default function OverviewSection({ analytics, records, isLoading }) {
 
   return (
     <div className="space-y-6">
-      {/* KPI Grid */}
+
+      {/* Main KPI Grid — 2 cols on mobile, 4 on lg */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         <KpiCard
           title="Total Attendance"
@@ -61,14 +68,33 @@ export default function OverviewSection({ analytics, records, isLoading }) {
         />
       </div>
 
-      {/* Demographic KPIs */}
-      <div className="grid grid-cols-3 gap-4">
-        <KpiCard title="Total Men"      value={kpi.totalMen}      accent="blue"   isLoading={isLoading}
-          subtitle={`${kpi.totalAttendance ? Math.round((kpi.totalMen / kpi.totalAttendance) * 100) : 0}% of attendance`} />
-        <KpiCard title="Total Women"    value={kpi.totalWomen}    accent="pink"   isLoading={isLoading}
-          subtitle={`${kpi.totalAttendance ? Math.round((kpi.totalWomen / kpi.totalAttendance) * 100) : 0}% of attendance`} />
-        <KpiCard title="Total Children" value={kpi.totalChildren} accent="amber"  isLoading={isLoading}
-          subtitle={`${kpi.totalAttendance ? Math.round((kpi.totalChildren / kpi.totalAttendance) * 100) : 0}% of attendance`} />
+      {/*
+       * Demographic KPI Grid
+       * Was grid-cols-3 always — each card only ~98px wide on a 375px phone,
+       * not enough room for text-3xl numbers. Now stacks on mobile.
+       */}
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+        <KpiCard
+          title="Total Men"
+          value={kpi.totalMen}
+          accent="blue"
+          isLoading={isLoading}
+          subtitle={`${kpi.totalAttendance ? Math.round((kpi.totalMen / kpi.totalAttendance) * 100) : 0}% of attendance`}
+        />
+        <KpiCard
+          title="Total Women"
+          value={kpi.totalWomen}
+          accent="pink"
+          isLoading={isLoading}
+          subtitle={`${kpi.totalAttendance ? Math.round((kpi.totalWomen / kpi.totalAttendance) * 100) : 0}% of attendance`}
+        />
+        <KpiCard
+          title="Total Children"
+          value={kpi.totalChildren}
+          accent="amber"
+          isLoading={isLoading}
+          subtitle={`${kpi.totalAttendance ? Math.round((kpi.totalChildren / kpi.totalAttendance) * 100) : 0}% of attendance`}
+        />
       </div>
 
       {/* Recent Services Table */}
@@ -78,29 +104,47 @@ export default function OverviewSection({ analytics, records, isLoading }) {
         isLoading={isLoading}
         isEmpty={!records.length}
       >
-        <div className="rounded-lg border overflow-hidden">
-          <Table>
+        {/*
+         * overflow-x-auto on the wrapper ensures the table scrolls horizontally
+         * on narrow screens even if content exceeds the container width.
+         * Men / Women / Children columns are hidden below sm to give Date,
+         * Service, and Total room to breathe.
+         */}
+        <div className="rounded-lg border overflow-x-auto">
+          <Table className="min-w-[320px]">
             <TableHeader>
               <TableRow className="bg-muted/50">
                 <TableHead className="text-xs py-2">Date</TableHead>
                 <TableHead className="text-xs py-2">Service</TableHead>
-                <TableHead className="text-xs py-2 text-right">Men</TableHead>
-                <TableHead className="text-xs py-2 text-right">Women</TableHead>
-                <TableHead className="text-xs py-2 text-right">Children</TableHead>
+                <TableHead className="hidden sm:table-cell text-xs py-2 text-right">Men</TableHead>
+                <TableHead className="hidden sm:table-cell text-xs py-2 text-right">Women</TableHead>
+                <TableHead className="hidden sm:table-cell text-xs py-2 text-right">Children</TableHead>
                 <TableHead className="text-xs py-2 text-right">Total</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               {recent.map((r, i) => (
                 <TableRow key={i} className="text-xs">
-                  <TableCell className="py-2 font-medium text-muted-foreground">{formatDate(r.date)}</TableCell>
-                  <TableCell className="py-2">
-                    <Badge variant="outline" className="text-[10px] font-normal">{r.service}</Badge>
+                  <TableCell className="py-2 font-medium text-muted-foreground whitespace-nowrap">
+                    {formatDate(r.date)}
                   </TableCell>
-                  <TableCell className="py-2 text-right text-blue-600 font-medium">{r.men}</TableCell>
-                  <TableCell className="py-2 text-right text-pink-600 font-medium">{r.women}</TableCell>
-                  <TableCell className="py-2 text-right text-amber-600 font-medium">{r.children}</TableCell>
-                  <TableCell className="py-2 text-right font-bold text-foreground">{r.total}</TableCell>
+                  <TableCell className="py-2">
+                    <Badge variant="outline" className="text-[10px] font-normal whitespace-nowrap">
+                      {r.service}
+                    </Badge>
+                  </TableCell>
+                  <TableCell className="hidden sm:table-cell py-2 text-right text-blue-600 font-medium">
+                    {r.men}
+                  </TableCell>
+                  <TableCell className="hidden sm:table-cell py-2 text-right text-pink-600 font-medium">
+                    {r.women}
+                  </TableCell>
+                  <TableCell className="hidden sm:table-cell py-2 text-right text-amber-600 font-medium">
+                    {r.children}
+                  </TableCell>
+                  <TableCell className="py-2 text-right font-bold text-foreground">
+                    {r.total}
+                  </TableCell>
                 </TableRow>
               ))}
             </TableBody>

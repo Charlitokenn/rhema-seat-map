@@ -1,6 +1,12 @@
 /**
  * ServiceSection.jsx
  * Attendance by service type bar chart + ranking table + averages.
+ *
+ * Mobile changes:
+ *  - Service Ranking table: hide Sessions column below sm
+ *    (mobile shows # | Service | Total — 3 clean columns)
+ *  - overflow-x-auto added to ranking table wrapper
+ *  - avg span marked shrink-0 to prevent number truncation on narrow cards
  */
 import React from 'react'
 import ChartCard from './ChartCard.jsx'
@@ -26,10 +32,10 @@ const RANK_MEDAL = ['🥇', '🥈', '🥉']
 
 export default function ServiceSection({ analytics, isLoading }) {
   const { byServiceType } = analytics
-  // const maxTotal = byServiceType[0]?.total ?? 1
 
   return (
     <div className="space-y-6">
+
       {/* Bar chart — demographic breakdown per service type */}
       <ChartCard
         title="Attendance by Service Type"
@@ -61,13 +67,19 @@ export default function ServiceSection({ analytics, isLoading }) {
           isLoading={isLoading}
           isEmpty={!byServiceType.length}
         >
-          <div className="rounded-lg border overflow-hidden">
-            <Table>
+          {/*
+           * overflow-x-auto keeps the table scrollable on narrow screens.
+           * Sessions column hidden below sm — mobile shows # | Service | Total.
+           */}
+          <div className="rounded-lg border overflow-x-auto">
+            <Table className="min-w-[240px]">
               <TableHeader>
                 <TableRow className="bg-muted/50">
                   <TableHead className="text-xs py-2 w-8">#</TableHead>
                   <TableHead className="text-xs py-2">Service</TableHead>
-                  <TableHead className="text-xs py-2 text-right">Sessions</TableHead>
+                  <TableHead className="hidden sm:table-cell text-xs py-2 text-right">
+                    Sessions
+                  </TableHead>
                   <TableHead className="text-xs py-2 text-right">Total</TableHead>
                 </TableRow>
               </TableHeader>
@@ -78,8 +90,12 @@ export default function ServiceSection({ analytics, isLoading }) {
                       {RANK_MEDAL[i] ?? <span className="text-muted-foreground">{i + 1}</span>}
                     </TableCell>
                     <TableCell className="py-2 font-medium">{s.service}</TableCell>
-                    <TableCell className="py-2 text-right text-muted-foreground">{s.count}</TableCell>
-                    <TableCell className="py-2 text-right font-bold">{s.total.toLocaleString()}</TableCell>
+                    <TableCell className="hidden sm:table-cell py-2 text-right text-muted-foreground">
+                      {s.count}
+                    </TableCell>
+                    <TableCell className="py-2 text-right font-bold">
+                      {s.total.toLocaleString()}
+                    </TableCell>
                   </TableRow>
                 ))}
               </TableBody>
@@ -87,7 +103,7 @@ export default function ServiceSection({ analytics, isLoading }) {
           </div>
         </ChartCard>
 
-        {/* Average attendance with progress bar */}
+        {/* Average attendance with progress bars */}
         <Card>
           <CardHeader className="pb-3">
             <CardTitle className="text-sm font-semibold flex items-center gap-2">
@@ -97,7 +113,9 @@ export default function ServiceSection({ analytics, isLoading }) {
           </CardHeader>
           <CardContent className="space-y-4">
             {isLoading
-              ? Array(3).fill(0).map((_, i) => <div key={i} className="h-10 bg-muted animate-pulse rounded" />)
+              ? Array(3).fill(0).map((_, i) => (
+                  <div key={i} className="h-10 bg-muted animate-pulse rounded" />
+                ))
               : byServiceType.map((s, i) => {
                   const maxAvg = byServiceType[0]?.average ?? 1
                   const pct    = Math.round((s.average / maxAvg) * 100)
@@ -106,7 +124,8 @@ export default function ServiceSection({ analytics, isLoading }) {
                     <div key={s.service} className="space-y-1.5">
                       <div className="flex items-center justify-between text-xs">
                         <span className="font-medium text-foreground truncate">{s.service}</span>
-                        <span className="font-bold tabular-nums ml-2">{s.average} avg</span>
+                        {/* shrink-0 prevents the avg number from being truncated */}
+                        <span className="font-bold tabular-nums ml-2 shrink-0">{s.average} avg</span>
                       </div>
                       <div className="h-2 bg-muted rounded-full overflow-hidden">
                         <div
