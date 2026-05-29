@@ -1,6 +1,7 @@
 import React from 'react'
 import { useUiStore } from '@/store/uiStore.js'
-import { useVenueStore } from '@/store/venueStore.js'
+import { useVenueStore } from '`@/store/venueStore.js`'
+import { useShallow } from 'zustand/react/shallow'
 import { useOnlineStatus } from '@/hooks/useOnlineStatus.js'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
@@ -31,7 +32,7 @@ export default function Toolbar({ pendingCount, isSyncing, onSync }) {
   const resetView   = useUiStore(s => s.resetView)
   const scale       = useUiStore(s => s.scale)
   const venue       = useVenueStore(s => s.venue)
-  const stats       = useVenueStore(s => s.getStats())
+  const stats       = useVenueStore(useShallow(s => s.getStats()))
   const isOnline    = useOnlineStatus()
 
   const syncDisabled = !isOnline || pendingCount === 0 || isSyncing

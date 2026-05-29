@@ -17,9 +17,9 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Trophy } from 'lucide-react'
 
 const BAR_CONFIG = {
-  men:      { label: 'Men',      color: 'hsl(var(--chart-2))' },
-  women:    { label: 'Women',    color: 'hsl(var(--chart-3))' },
-  children: { label: 'Children', color: 'hsl(var(--chart-4))' },
+  men:      { label: 'Men',      color: 'var(--men)' },
+  women:    { label: 'Women',    color: 'var(--women)' },
+  children: { label: 'Children', color: 'var(--children)' },
 }
 
 const RANK_MEDAL = ['🥇', '🥈', '🥉']

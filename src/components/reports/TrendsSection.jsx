@@ -14,16 +14,16 @@ import {
 } from 'recharts'
 
 const WEEKLY_CONFIG = {
-  total:    { label: 'Total',    color: 'hsl(var(--chart-1))' },
-  men:      { label: 'Men',      color: 'hsl(var(--chart-2))' },
-  women:    { label: 'Women',    color: 'hsl(var(--chart-3))' },
-  children: { label: 'Children', color: 'hsl(var(--chart-4))' },
+  total:    { label: 'Total',    color: 'var(--chart-1)' },
+  men:      { label: 'Men',      color: 'var(--men)' },
+  women:    { label: 'Women',    color: 'var(--women)' },
+  children: { label: 'Children', color: 'var(--children)' },
 }
 
 const MONTHLY_CONFIG = {
-  men:      { label: 'Men',      color: 'hsl(var(--chart-2))' },
-  women:    { label: 'Women',    color: 'hsl(var(--chart-3))' },
-  children: { label: 'Children', color: 'hsl(var(--chart-4))' },
+  men:      { label: 'Men',      color: 'var(--men)' },
+  women:    { label: 'Women',    color: 'var(--women)' },
+  children: { label: 'Children', color: 'var(--children)' },
 }
 
 export default function TrendsSection({ analytics, isLoading }) {

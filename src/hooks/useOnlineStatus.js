@@ -1,7 +1,10 @@
 import { useEffect, useState, useCallback } from 'react'
 
-const URL = import.meta.env.VITE_HEALTH_URL
-const HEALTH_URL = URL+`?health=1`
+const BASE_HEALTH_URL = import.meta.env.VITE_GAS_URL
+const HEALTH_URL = BASE_HEALTH_URL ? new URL(BASE_HEALTH_URL, window.location.origin)
+    : null
+
+if (HEALTH_URL) HEALTH_URL.searchParams.set('health', '1')
 
 export function useOnlineStatus() {
   const [isOnline, setIsOnline] = useState(() => navigator.onLine)
@@ -20,7 +23,12 @@ export function useOnlineStatus() {
         controller.abort()
       }, 5000)
 
-      const response = await fetch(HEALTH_URL, {
+      if (!HEALTH_URL) {
+        setIsOnline(navigator.onLine)
+        return
+      }
+
+      const response = await fetch(HEALTH_URL.toString(), {
         method: 'GET',
         cache: 'no-store',
         signal: controller.signal,

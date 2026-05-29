@@ -50,7 +50,10 @@ export const useChurchStore = create(
       // so any new seats added to the layout aren't lost
       merge: (persisted, current) => ({
         ...current,
-        seats: { ...current.seats, ...persisted.seats },
+             seats: {
+                   ...current.seats,
+                   ...((persisted && typeof persisted === 'object' && persisted.seats) || {}),
+       },
       }),
     }
   )
