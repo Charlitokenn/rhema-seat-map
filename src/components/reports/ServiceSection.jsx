@@ -26,7 +26,7 @@ const RANK_MEDAL = ['🥇', '🥈', '🥉']
 
 export default function ServiceSection({ analytics, isLoading }) {
   const { byServiceType } = analytics
-  const maxTotal = byServiceType[0]?.total ?? 1
+  // const maxTotal = byServiceType[0]?.total ?? 1
 
   return (
     <div className="space-y-6">
