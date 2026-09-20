@@ -1,0 +1,3550 @@
+diff --git a/SKILL.md b/.claude/skills/shadcn/SKILL.md
+similarity index 100%
+rename from SKILL.md
+rename to .claude/skills/shadcn/SKILL.md
+diff --git a/.claude/skills/shadcn/agents/openai.yml b/.claude/skills/shadcn/agents/openai.yml
+new file mode 100644
+index 0000000..ab636da
+--- /dev/null
++++ b/.claude/skills/shadcn/agents/openai.yml
+@@ -0,0 +1,5 @@
++interface:
++  display_name: "shadcn/ui"
++  short_description: "Manages shadcn/ui components — adding, searching, fixing, debugging, styling, and composing UI."
++  icon_small: "./assets/shadcn-small.png"
++  icon_large: "./assets/shadcn.png"
+diff --git a/.claude/skills/shadcn/assets/shadcn-small.png b/.claude/skills/shadcn/assets/shadcn-small.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..547154b97f2298335159c23eec1dac0d147a1246
+GIT binary patch
+literal 1049
+zcmeAS@N?(olHy`uVBq!ia0vp^0wB!61|;P_|4#%`Ea{HEjtmSN`?>!lvI6-E$sR$z
+z3=CCj3=9n|3=F@3LJcn%7)lKo7+xhXFj&oCU=S~uvn$XBDAAG{;hE;^%b*2hb1<+n
+z3NbJPS&Tr)z$nE4G7ZRL@M4sPvx68lplX;H7}_%#SfFa6fHVkr05M1pgl1mAh%j*h
+z6I`{x0%imor0saV%ts)_S>O>_%)r1c48n{Iv*t(uO^eJ7i71Ki^|4CM&(%vz$xlkv
+ztH><?>0+>{umUo3Q%e#RDspr3imfVamB1>jfNYSkzLEl1NlCV?QiN}Sf^&XRs)CuG
+zfu4bq9hZWFf=y9MnpKdC8&o@xXRDM^Qc_^0uU}qXu2*iXmtT~wZ)j<0sc&GUZ)Btk
+zRH0j3nOBlnp_^B%3^4>|j!SBBa#3bMNoIbY0?6FNr2NtnTO}osMQ{LdXGvxn!lt}p
+zsJDO~)CbAv8|oS8!_5Y2wE>A*`4?rT0&NDFZ)a!&R*518wZ}#uWI2*!AU*|)0=;U-
+zWup%dHajlKxQFb(K%V94;uvBfm>Yb$>yU#$kCbgiC(9RwrlwA(rsW(``(6H=zq@!*
+zUB_~Trk_lTdxPh$yxDTsVY&L;b+6{tRm^+d+gl^OQcCIBok=%y)Vhx@dR1ceL3r{0
+z9=2<T8PCbDj&`^)?ex;kU#n~lo#I)_5>nMXx8DxEkhL{v?(>~8{qDBkfB!u-iDB`|
+z-5d%Ae82YI%n8Zg9$mRN?o-|V)V*=5b-R>a>}P2{=pcK^B(&B-W{C#Z!Q%b*ueK>n
+zK6ymYLRneebCKDSzcqHEHFopo-mkH{zIkt2Z0^086Tko7%N)NxoZYSDM1jSUwPpuS
+zSeq*wzrC2D(tq4pZ#s9QP@Cd8Q^wW3*2cL_519?*;#4`B;+ei#o;C{Kkamm3Jooa;
+zE$3K-+c<XL^^3mRb7)KA?z?$<rN$GhuI);+aV)T!yF}-7*y?}XGRHSI)!uJkXLGpe
+zXPB}zgA)hWG3&>(6ShTjelW_B*W<jDG@o&iK`yu3wXb#(3Sv$UO&_-iKl{~_wK>5o
+zcS6z34IR5C-SIF8m(lui^IOy!-~We?b1?PSGniCYR=ZyR^%<1lJzf1=);T3K0RU@N
+BSy=!8
+
+literal 0
+HcmV?d00001
+
+diff --git a/.claude/skills/shadcn/assets/shadcn.png b/.claude/skills/shadcn/assets/shadcn.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..b7b6814acc25073e5f48099b1fd3f70c47bfb1c3
+GIT binary patch
+literal 3852
+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
+bl=;?Gl_4rhKv9*v^N&Y5dW`slK#u$$5&4lY
+
+literal 0
+HcmV?d00001
+
+diff --git a/.claude/skills/shadcn/cli.md b/.claude/skills/shadcn/cli.md
+new file mode 100644
+index 0000000..8a1d195
+--- /dev/null
++++ b/.claude/skills/shadcn/cli.md
+@@ -0,0 +1,290 @@
++# shadcn CLI Reference
++
++Configuration is read from `components.json`.
++
++> **IMPORTANT:** Always run commands using the project's package runner: `npx shadcn@latest`, `pnpm dlx shadcn@latest`, or `bunx --bun shadcn@latest`. Check `packageManager` from project context to choose the right one. Examples below use `npx shadcn@latest` but substitute the correct runner for the project.
++
++> **IMPORTANT:** Only use the flags documented below. Do not invent or guess flags — if a flag isn't listed here, it doesn't exist. The CLI auto-detects the package manager from the project's lockfile; there is no `--package-manager` flag.
++
++## Contents
++
++- Commands: init, apply, add (dry-run, smart merge), search, view, docs, info, build
++- Templates: next, vite, start, react-router, astro
++- Presets: named, code, URL formats and fields
++- Switching presets
++
++---
++
++## Commands
++
++### `init` — Initialize or create a project
++
++```bash
++npx shadcn@latest init [components...] [options]
++```
++
++Initializes shadcn/ui in an existing project or creates a new project (when `--name` is provided). Optionally installs components in the same step.
++
++| Flag                    | Short | Description                                               | Default |
++| ----------------------- | ----- | --------------------------------------------------------- | ------- |
++| `--template <template>` | `-t`  | Template (next, start, vite, next-monorepo, react-router) | —       |
++| `--preset [name]`       | `-p`  | Preset configuration (named, code, or URL)                | —       |
++| `--yes`                 | `-y`  | Skip confirmation prompt                                  | `true`  |
++| `--defaults`            | `-d`  | Use defaults (`--template=next --preset=base-nova`)       | `false` |
++| `--force`               | `-f`  | Force overwrite existing configuration                    | `false` |
++| `--cwd <cwd>`           | `-c`  | Working directory                                         | current |
++| `--name <name>`         | `-n`  | Name for new project                                      | —       |
++| `--silent`              | `-s`  | Mute output                                               | `false` |
++| `--rtl`                 |       | Enable RTL support                                        | —       |
++| `--reinstall`           |       | Re-install existing UI components                         | `false` |
++| `--monorepo`            |       | Scaffold a monorepo project                               | —       |
++| `--no-monorepo`         |       | Skip the monorepo prompt                                  | —       |
++
++`npx shadcn@latest create` is an alias for `npx shadcn@latest init`.
++
++### `apply` — Apply a preset to an existing project
++
++```bash
++npx shadcn@latest apply [preset] [options]
++```
++
++Applies a preset to an existing project, overwriting preset-driven config, fonts, CSS variables, and detected UI components.
++
++| Flag                | Short | Description                                | Default |
++| ------------------- | ----- | ------------------------------------------ | ------- |
++| `--preset <preset>` | —     | Preset configuration (named, code, or URL) | —       |
++| `--yes`             | `-y`  | Skip confirmation prompt                   | `false` |
++| `--cwd <cwd>`       | `-c`  | Working directory                          | current |
++| `--silent`          | `-s`  | Mute output                                | `false` |
++
++`[preset]` is a shorthand for `--preset <preset>`. If both are provided, they must match.
++If no preset is provided, the CLI offers to open the custom preset builder on `ui.shadcn.com/create`.
++
++### `add` — Add components
++
++> **IMPORTANT:** To compare local components against upstream or to preview changes, ALWAYS use `npx shadcn@latest add <component> --dry-run`, `--diff`, or `--view`. NEVER fetch raw files from GitHub or other sources manually. The CLI handles registry resolution, file paths, and CSS diffing automatically.
++
++```bash
++npx shadcn@latest add [components...] [options]
++```
++
++Accepts component names, registry-prefixed names (`@magicui/shimmer-button`),
++GitHub item addresses (`owner/repo/item`), URLs, or local paths.
++
++| Flag            | Short | Description                                                                                                          | Default |
++| --------------- | ----- | -------------------------------------------------------------------------------------------------------------------- | ------- |
++| `--yes`         | `-y`  | Skip confirmation prompt                                                                                             | `false` |
++| `--overwrite`   | `-o`  | Overwrite existing files                                                                                             | `false` |
++| `--cwd <cwd>`   | `-c`  | Working directory                                                                                                    | current |
++| `--all`         | `-a`  | Add all available components                                                                                         | `false` |
++| `--path <path>` | `-p`  | Target path for the component                                                                                        | —       |
++| `--silent`      | `-s`  | Mute output                                                                                                          | `false` |
++| `--dry-run`     |       | Preview all changes without writing files                                                                            | `false` |
++| `--diff [path]` |       | Show diffs. Without a path, shows the first 5 files. With a path, shows that file only (implies `--dry-run`)         | —       |
++| `--view [path]` |       | Show file contents. Without a path, shows the first 5 files. With a path, shows that file only (implies `--dry-run`) | —       |
++
++#### Dry-Run Mode
++
++Use `--dry-run` to preview what `add` would do without writing any files. `--diff` and `--view` both imply `--dry-run`.
++
++```bash
++# Preview all changes.
++npx shadcn@latest add button --dry-run
++
++# Show diffs for all files (top 5).
++npx shadcn@latest add button --diff
++
++# Show the diff for a specific file.
++npx shadcn@latest add button --diff button.tsx
++
++# Show contents for all files (top 5).
++npx shadcn@latest add button --view
++
++# Show the full content of a specific file.
++npx shadcn@latest add button --view button.tsx
++
++# Works with URLs too.
++npx shadcn@latest add https://api.npoint.io/abc123 --dry-run
++
++# Works with public GitHub registries too.
++npx shadcn@latest add owner/repo/item --dry-run
++
++# CSS diffs.
++npx shadcn@latest add button --diff globals.css
++```
++
++**When to use dry-run:**
++
++- When the user asks "what files will this add?" or "what will this change?" — use `--dry-run`.
++- Before overwriting existing components — use `--diff` to preview the changes first.
++- When the user wants to inspect component source code without installing — use `--view`.
++- When checking what CSS changes would be made to `globals.css` — use `--diff globals.css`.
++- When the user asks to review or audit third-party registry code before installing — use `--view` to inspect the source.
++
++> **`npx shadcn@latest add --dry-run` vs `npx shadcn@latest view`:** Prefer `npx shadcn@latest add --dry-run/--diff/--view` over `npx shadcn@latest view` when the user wants to preview changes to their project. `npx shadcn@latest view` only shows raw registry metadata. `npx shadcn@latest add --dry-run` shows exactly what would happen in the user's project: resolved file paths, diffs against existing files, and CSS updates. Use `npx shadcn@latest view` only when the user wants to browse registry info without a project context.
++
++#### Smart Merge from Upstream
++
++See [Updating Components in SKILL.md](./SKILL.md#updating-components) for the full workflow.
++
++### `search` — Search registries
++
++```bash
++npx shadcn@latest search [registries...] [options]
++```
++
++Fuzzy search across registries. Also aliased as `npx shadcn@latest list`.
++Supports namespaces (`@acme`), public GitHub registry sources (`owner/repo`),
++and registry catalog URLs. Without `-q`, lists all items. When no registries are
++passed, searches every registry configured in `components.json`.
++
++| Flag                | Short | Description                                       | Default |
++| ------------------- | ----- | ------------------------------------------------- | ------- |
++| `--query <query>`   | `-q`  | Search query                                      | —       |
++| `--type <type>`     | `-t`  | Filter by item type (e.g. `ui`, `block`, `hook`); comma-separated | —       |
++| `--limit <number>`  | `-l`  | Max items to display                              | `100`   |
++| `--offset <number>` | `-o`  | Items to skip                                     | `0`     |
++| `--json`            |       | Output as JSON                                    | `false` |
++| `--cwd <cwd>`       | `-c`  | Working directory                                 | current |
++
++### `view` — View item details
++
++```bash
++npx shadcn@latest view <items...> [options]
++```
++
++Displays item info including file contents. Examples:
++`npx shadcn@latest view @shadcn/button`,
++`npx shadcn@latest view owner/repo/item`.
++
++### `docs` — Get component documentation URLs
++
++```bash
++npx shadcn@latest docs <components...> [options]
++```
++
++Outputs resolved URLs for component documentation, examples, and API references. Accepts one or more component names. Fetch the URLs to get the actual content.
++
++Example output for `npx shadcn@latest docs input button`:
++
++```
++base  radix
++
++input
++  docs      https://ui.shadcn.com/docs/components/radix/input
++  examples  https://raw.githubusercontent.com/.../examples/input-example.tsx
++
++button
++  docs      https://ui.shadcn.com/docs/components/radix/button
++  examples  https://raw.githubusercontent.com/.../examples/button-example.tsx
++```
++
++Some components include an `api` link to the underlying library (e.g. `cmdk` for the command component).
++
++### `diff` — Check for updates
++
++Do not use this command. Use `npx shadcn@latest add --diff` instead.
++
++### `info` — Project information
++
++```bash
++npx shadcn@latest info [options]
++```
++
++Displays project info and `components.json` configuration. Run this first to discover the project's framework, aliases, Tailwind version, and resolved paths.
++
++| Flag          | Short | Description       | Default |
++| ------------- | ----- | ----------------- | ------- |
++| `--cwd <cwd>` | `-c`  | Working directory | current |
++
++**Project Info fields:**
++
++| Field                | Type      | Meaning                                                            |
++| -------------------- | --------- | ------------------------------------------------------------------ |
++| `framework`          | `string`  | Detected framework (`next`, `vite`, `react-router`, `start`, etc.) |
++| `frameworkVersion`   | `string`  | Framework version (e.g. `15.2.4`)                                  |
++| `isSrcDir`           | `boolean` | Whether the project uses a `src/` directory                        |
++| `isRSC`              | `boolean` | Whether React Server Components are enabled                        |
++| `isTsx`              | `boolean` | Whether the project uses TypeScript                                |
++| `tailwindVersion`    | `string`  | `"v3"` or `"v4"`                                                   |
++| `tailwindConfigFile` | `string`  | Path to the Tailwind config file                                   |
++| `tailwindCssFile`    | `string`  | Path to the global CSS file                                        |
++| `aliasPrefix`        | `string`  | Import alias prefix (e.g. `@`, `~`, `@/`)                          |
++| `packageManager`     | `string`  | Detected package manager (`npm`, `pnpm`, `yarn`, `bun`)            |
++
++**Components.json fields:**
++
++| Field                | Type      | Meaning                                                                                    |
++| -------------------- | --------- | ------------------------------------------------------------------------------------------ |
++| `base`               | `string`  | Primitive library (`radix` or `base`) — determines component APIs and available props      |
++| `style`              | `string`  | Visual style (e.g. `nova`, `vega`)                                                         |
++| `rsc`                | `boolean` | RSC flag from config                                                                       |
++| `tsx`                | `boolean` | TypeScript flag                                                                            |
++| `tailwind.config`    | `string`  | Tailwind config path                                                                       |
++| `tailwind.css`       | `string`  | Global CSS path — this is where custom CSS variables go                                    |
++| `iconLibrary`        | `string`  | Icon library — determines icon import package (e.g. `lucide-react`, `@tabler/icons-react`) |
++| `aliases.components` | `string`  | Component import alias (e.g. `@/components`)                                               |
++| `aliases.utils`      | `string`  | Utils import alias (e.g. `@/lib/utils`)                                                    |
++| `aliases.ui`         | `string`  | UI component alias (e.g. `@/components/ui`)                                                |
++| `aliases.lib`        | `string`  | Lib alias (e.g. `@/lib`)                                                                   |
++| `aliases.hooks`      | `string`  | Hooks alias (e.g. `@/hooks`)                                                               |
++| `resolvedPaths`      | `object`  | Absolute file-system paths for each alias                                                  |
++| `registries`         | `object`  | Configured custom registries                                                               |
++
++**Links fields:**
++
++The `info` output includes a **Links** section with templated URLs for component docs, source, and examples. For resolved URLs, use `npx shadcn@latest docs <component>` instead.
++
++### `build` — Build a custom registry
++
++```bash
++npx shadcn@latest build [registry] [options]
++```
++
++Builds `registry.json` into individual JSON files for distribution. Default input: `./registry.json`, default output: `./public/r`.
++
++For authoring rules, `include`, item definitions, `registryDependencies`, and
++GitHub registry behavior, see [registry.md](./registry.md).
++
++| Flag              | Short | Description       | Default      |
++| ----------------- | ----- | ----------------- | ------------ |
++| `--output <path>` | `-o`  | Output directory  | `./public/r` |
++| `--cwd <cwd>`     | `-c`  | Working directory | current      |
++
++---
++
++## Templates
++
++| Value          | Framework      | Monorepo support |
++| -------------- | -------------- | ---------------- |
++| `next`         | Next.js        | Yes              |
++| `vite`         | Vite           | Yes              |
++| `start`        | TanStack Start | Yes              |
++| `react-router` | React Router   | Yes              |
++| `astro`        | Astro          | Yes              |
++| `laravel`      | Laravel        | No               |
++
++All templates support monorepo scaffolding via the `--monorepo` flag. When passed, the CLI uses a monorepo-specific template directory (e.g. `next-monorepo`, `vite-monorepo`). When neither `--monorepo` nor `--no-monorepo` is passed, the CLI prompts interactively. Laravel does not support monorepo scaffolding.
++
++---
++
++## Presets
++
++Three ways to specify a preset via `--preset`:
++
++1. **Named:** `--preset nova` or `--preset lyra`
++2. **Code:** `--preset a2r6bw` (version-prefixed base62 string, e.g. `a2r6bw` or `b0`)
++3. **URL:** `--preset "https://ui.shadcn.com/init?base=radix&style=nova&..."`
++
++> **IMPORTANT:** Never try to decode, fetch, or resolve preset codes manually. Preset codes are opaque — pass them directly to `npx shadcn@latest init --preset <code>` and let the CLI handle resolution.
++> Use `npx shadcn@latest apply --preset <code>` when overwriting an existing project's preset.
++
++## Switching Presets
++
++Ask the user first: **overwrite**, **merge**, or **skip** existing components?
++
++- **Overwrite / Re-install** → `npx shadcn@latest apply --preset <code>`. Overwrites all detected component files with the new preset styles. Use when the user hasn't customized components.
++- **Merge** → `npx shadcn@latest init --preset <code> --force --no-reinstall`, then run `npx shadcn@latest info` to get the list of installed components and use the [smart merge workflow](./SKILL.md#updating-components) to update them one by one, preserving local changes. Use when the user has customized components.
++- **Skip** → `npx shadcn@latest init --preset <code> --force --no-reinstall`. Only updates config and CSS variables, leaves existing components as-is.
++
++Always run preset commands inside the user's project directory. `apply` only works in an existing project with a `components.json` file. The CLI automatically preserves the current base (`base` vs `radix`) from `components.json`. If you must use a scratch/temp directory (e.g. for `--dry-run` comparisons), pass `--base <current-base>` explicitly — preset codes do not encode the base.
+diff --git a/.claude/skills/shadcn/customization.md b/.claude/skills/shadcn/customization.md
+new file mode 100644
+index 0000000..16954f5
+--- /dev/null
++++ b/.claude/skills/shadcn/customization.md
+@@ -0,0 +1,209 @@
++# Customization & Theming
++
++Components reference semantic CSS variable tokens. Change the variables to change every component.
++
++## Contents
++
++- How it works (CSS variables → Tailwind utilities → components)
++- Color variables and OKLCH format
++- Dark mode setup
++- Changing the theme (presets, CSS variables)
++- Adding custom colors (Tailwind v3 and v4)
++- Border radius
++- Customizing components (variants, className, wrappers)
++- Checking for updates
++
++---
++
++## How It Works
++
++1. CSS variables defined in `:root` (light) and `.dark` (dark mode).
++2. Tailwind maps them to utilities: `bg-primary`, `text-muted-foreground`, etc.
++3. Components use these utilities — changing a variable changes all components that reference it.
++
++---
++
++## Color Variables
++
++Every color follows the `name` / `name-foreground` convention. The base variable is for backgrounds, `-foreground` is for text/icons on that background.
++
++| Variable                                     | Purpose                          |
++| -------------------------------------------- | -------------------------------- |
++| `--background` / `--foreground`              | Page background and default text |
++| `--card` / `--card-foreground`               | Card surfaces                    |
++| `--primary` / `--primary-foreground`         | Primary buttons and actions      |
++| `--secondary` / `--secondary-foreground`     | Secondary actions                |
++| `--muted` / `--muted-foreground`             | Muted/disabled states            |
++| `--accent` / `--accent-foreground`           | Hover and accent states          |
++| `--destructive` / `--destructive-foreground` | Error and destructive actions    |
++| `--border`                                   | Default border color             |
++| `--input`                                    | Form input borders               |
++| `--ring`                                     | Focus ring color                 |
++| `--chart-1` through `--chart-5`              | Chart/data visualization         |
++| `--sidebar-*`                                | Sidebar-specific colors          |
++| `--surface` / `--surface-foreground`         | Secondary surface                |
++
++Colors use OKLCH: `--primary: oklch(0.205 0 0)` where values are lightness (0–1), chroma (0 = gray), and hue (0–360).
++
++---
++
++## Dark Mode
++
++Class-based toggle via `.dark` on the root element. In Next.js, use `next-themes`:
++
++```tsx
++import { ThemeProvider } from "next-themes"
++
++<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
++  {children}
++</ThemeProvider>
++```
++
++---
++
++## Changing the Theme
++
++```bash
++# Apply a preset code from ui.shadcn.com.
++npx shadcn@latest apply --preset a2r6bw
++
++# Positional shorthand also works.
++npx shadcn@latest apply a2r6bw
++
++# Switch to a named preset and overwrite existing components.
++npx shadcn@latest apply --preset nova
++
++# Preserve existing components instead.
++npx shadcn@latest init --preset nova --force --no-reinstall
++
++# Use a custom theme URL.
++npx shadcn@latest apply --preset "https://ui.shadcn.com/init?base=radix&style=nova&theme=blue&..."
++```
++
++Or edit CSS variables directly in `globals.css`.
++
++---
++
++## Adding Custom Colors
++
++Add variables to the file at `tailwindCssFile` from `npx shadcn@latest info` (typically `globals.css`). Never create a new CSS file for this.
++
++```css
++/* 1. Define in the global CSS file. */
++:root {
++  --warning: oklch(0.84 0.16 84);
++  --warning-foreground: oklch(0.28 0.07 46);
++}
++.dark {
++  --warning: oklch(0.41 0.11 46);
++  --warning-foreground: oklch(0.99 0.02 95);
++}
++```
++
++```css
++/* 2a. Register with Tailwind v4 (@theme inline). */
++@theme inline {
++  --color-warning: var(--warning);
++  --color-warning-foreground: var(--warning-foreground);
++}
++```
++
++When `tailwindVersion` is `"v3"` (check via `npx shadcn@latest info`), register in `tailwind.config.js` instead:
++
++```js
++// 2b. Register with Tailwind v3 (tailwind.config.js).
++module.exports = {
++  theme: {
++    extend: {
++      colors: {
++        warning: "oklch(var(--warning) / <alpha-value>)",
++        "warning-foreground":
++          "oklch(var(--warning-foreground) / <alpha-value>)",
++      },
++    },
++  },
++}
++```
++
++```tsx
++// 3. Use in components.
++<div className="bg-warning text-warning-foreground">Warning</div>
++```
++
++---
++
++## Border Radius
++
++`--radius` controls border radius globally. Components derive values from it (`rounded-lg` = `var(--radius)`, `rounded-md` = `calc(var(--radius) - 2px)`).
++
++---
++
++## Customizing Components
++
++See also: [rules/styling.md](./rules/styling.md) for Incorrect/Correct examples.
++
++Prefer these approaches in order:
++
++### 1. Built-in variants
++
++```tsx
++<Button variant="outline" size="sm">
++  Click
++</Button>
++```
++
++### 2. Tailwind classes via `className`
++
++```tsx
++<Card className="mx-auto max-w-md">...</Card>
++```
++
++### 3. Add a new variant
++
++Edit the component source to add a variant via `cva`:
++
++```tsx
++// components/ui/button.tsx
++warning: "bg-warning text-warning-foreground hover:bg-warning/90",
++```
++
++### 4. Wrapper components
++
++Compose shadcn/ui primitives into higher-level components:
++
++```tsx
++export function ConfirmDialog({ title, description, onConfirm, children }) {
++  return (
++    <AlertDialog>
++      <AlertDialogTrigger asChild>{children}</AlertDialogTrigger>
++      <AlertDialogContent>
++        <AlertDialogHeader>
++          <AlertDialogTitle>{title}</AlertDialogTitle>
++          <AlertDialogDescription>{description}</AlertDialogDescription>
++        </AlertDialogHeader>
++        <AlertDialogFooter>
++          <AlertDialogCancel>Cancel</AlertDialogCancel>
++          <AlertDialogAction onClick={onConfirm}>Confirm</AlertDialogAction>
++        </AlertDialogFooter>
++      </AlertDialogContent>
++    </AlertDialog>
++  )
++}
++```
++
++---
++
++## Checking for Updates
++
++```bash
++npx shadcn@latest add button --diff
++```
++
++To preview exactly what would change before updating, use `--dry-run` and `--diff`:
++
++```bash
++npx shadcn@latest add button --dry-run        # see all affected files
++npx shadcn@latest add button --diff button.tsx # see the diff for a specific file
++```
++
++See [Updating Components in SKILL.md](./SKILL.md#updating-components) for the full smart merge workflow.
+diff --git a/.claude/skills/shadcn/evals/evals.json b/.claude/skills/shadcn/evals/evals.json
+new file mode 100644
+index 0000000..c1b7bdd
+--- /dev/null
++++ b/.claude/skills/shadcn/evals/evals.json
+@@ -0,0 +1,77 @@
++{
++  "skill_name": "shadcn",
++  "evals": [
++    {
++      "id": 1,
++      "prompt": "I'm building a Next.js app with shadcn/ui (base-nova preset, lucide icons). Create a settings form component with fields for: full name, email address, and notification preferences (email, SMS, push notifications as toggle options). Add validation states for required fields.",
++      "expected_output": "A React component using FieldGroup, Field, ToggleGroup, data-invalid/aria-invalid validation, gap-* spacing, and semantic colors.",
++      "files": [],
++      "expectations": [
++        "Uses FieldGroup and Field components for form layout instead of raw div with space-y",
++        "Uses Switch for independent on/off notification toggles (not looping Button with manual active state)",
++        "Uses data-invalid on Field and aria-invalid on the input control for validation states",
++        "Uses gap-* (e.g. gap-4, gap-6) instead of space-y-* or space-x-* for spacing",
++        "Uses semantic color tokens (e.g. bg-background, text-muted-foreground, text-destructive) instead of raw colors like bg-red-500",
++        "No manual dark: color overrides"
++      ]
++    },
++    {
++      "id": 2,
++      "prompt": "Create a dialog component for editing a user profile. It should have the user's avatar at the top, input fields for name and bio, and Save/Cancel buttons with appropriate icons. Using shadcn/ui with radix-nova preset and tabler icons.",
++      "expected_output": "A React component with DialogTitle, Avatar+AvatarFallback, data-icon on icon buttons, no icon sizing classes, tabler icon imports.",
++      "files": [],
++      "expectations": [
++        "Includes DialogTitle for accessibility (visible or with sr-only class)",
++        "Avatar component includes AvatarFallback",
++        "Icons on buttons use the data-icon attribute (data-icon=\"inline-start\" or data-icon=\"inline-end\")",
++        "No sizing classes on icons inside components (no size-4, w-4, h-4, etc.)",
++        "Uses tabler icons (@tabler/icons-react) instead of lucide-react",
++        "Uses asChild for custom triggers (radix preset)"
++      ]
++    },
++    {
++      "id": 3,
++      "prompt": "Create a dashboard component that shows 4 stat cards in a grid. Each card has a title, large number, percentage change badge, and a loading skeleton state. Using shadcn/ui with base-nova preset and lucide icons.",
++      "expected_output": "A React component with full Card composition, Skeleton for loading, Badge for changes, semantic colors, gap-* spacing.",
++      "files": [],
++      "expectations": [
++        "Uses full Card composition with CardHeader, CardTitle, CardContent (not dumping everything into CardContent)",
++        "Uses Skeleton component for loading placeholders instead of custom animate-pulse divs",
++        "Uses Badge component for percentage change instead of custom styled spans",
++        "Uses semantic color tokens instead of raw color values like bg-green-500 or text-red-600",
++        "Uses gap-* instead of space-y-* or space-x-* for spacing",
++        "Uses size-* when width and height are equal instead of separate w-* h-*"
++      ]
++    },
++    {
++      "id": 4,
++      "prompt": "I'm building a Next.js app with shadcn/ui (base-nova preset, lucide icons). Build a chat conversation view: a scrollable thread of messages from two different people, each with an avatar, sender name, timestamp, and message bubble. A couple of messages include an image attachment and a PDF file attachment, and there's a 'Today' divider separating the days.",
++      "expected_output": "A React component composing MessageScroller, Message, Bubble, Attachment, and Marker from the registry instead of hand-rolled bubble/divider/attachment markup.",
++      "files": [],
++      "expectations": [
++        "Uses MessageScroller (MessageScrollerProvider, MessageScrollerViewport, MessageScrollerContent, MessageScrollerItem) for the scrollable thread instead of a raw overflow-y-auto div or ScrollArea",
++        "Wraps each row in MessageScrollerItem inside MessageScrollerContent",
++        "Uses Message with MessageAvatar/MessageContent/MessageHeader for row layout instead of custom flex divs",
++        "Uses Bubble + BubbleContent for the message surface instead of a styled div with bg-muted/bg-primary",
++        "Uses Attachment (AttachmentMedia, AttachmentContent, AttachmentTitle, AttachmentDescription) for the file and image attachments instead of Item or a custom card",
++        "Uses Marker (variant=\"separator\") for the 'Today' divider instead of Separator plus a centered label",
++        "Uses semantic color tokens and gap-* spacing; no raw colors like bg-emerald-500 and no space-y-*",
++        "Includes \"use client\" when the component uses state or event handlers (isRSC)"
++      ]
++    },
++    {
++      "id": 5,
++      "prompt": "Using shadcn/ui (base-nova preset, lucide icons), build a streaming AI chat UI. The assistant's reply streams in while it generates, the view auto-scrolls to follow the latest content but stops following if the user scrolls up to read earlier messages, a 'jump to latest' button appears when the user has scrolled away from the bottom, and a subtle 'thinking…' shimmer shows while the model is generating.",
++      "expected_output": "A React component that delegates scroll/anchor behavior to MessageScroller and uses MessageScrollerButton for jump-to-latest and the shimmer utility for the thinking indicator — no hand-rolled scroll logic or custom shimmer keyframes.",
++      "files": [],
++      "expectations": [
++        "Uses MessageScroller with MessageScrollerProvider (autoScroll) and scrollAnchor on message items for the stick-to-bottom/follow behavior instead of a custom useStickToBottom hook or ResizeObserver/scrollTop wiring",
++        "Uses MessageScrollerButton for the jump-to-latest control instead of a hand-built conditional button driven by manual scroll-position state",
++        "Uses the shimmer utility class for the 'thinking…' indicator instead of a custom @keyframes or bg-clip-text gradient animation",
++        "Wraps each message row in MessageScrollerItem inside MessageScrollerContent",
++        "Uses Message + Bubble + BubbleContent for the conversation rows instead of hand-rolled bubble divs",
++        "Uses semantic color tokens and gap-* spacing; includes \"use client\" (isRSC)"
++      ]
++    }
++  ]
++}
+diff --git a/.claude/skills/shadcn/mcp.md b/.claude/skills/shadcn/mcp.md
+new file mode 100644
+index 0000000..6539dda
+--- /dev/null
++++ b/.claude/skills/shadcn/mcp.md
+@@ -0,0 +1,105 @@
++# shadcn MCP Server
++
++The CLI includes an MCP server that lets AI assistants search, browse, view, and install items from registries.
++
++---
++
++## Setup
++
++```bash
++shadcn mcp        # start the MCP server (stdio)
++shadcn mcp init   # write config for your editor
++```
++
++Editor config files:
++
++| Editor      | Config file                     |
++| ----------- | ------------------------------- |
++| Claude Code | `.mcp.json`                     |
++| Cursor      | `.cursor/mcp.json`              |
++| VS Code     | `.vscode/mcp.json`              |
++| OpenCode    | `opencode.json`                 |
++| Codex       | `~/.codex/config.toml` (manual) |
++
++---
++
++## Tools
++
++> **Tip:** MCP tools handle registry operations (search, view, install). For project configuration (aliases, framework, Tailwind version), use `npx shadcn@latest info` — there is no MCP equivalent.
++
++### `shadcn:get_project_registries`
++
++Returns registry names from `components.json`. Errors if no `components.json` exists.
++
++**Input:** none
++
++### `shadcn:list_items_in_registries`
++
++Lists all items from one or more registries. Registries can be configured
++namespaces such as `@acme`, public GitHub sources such as `owner/repo`, or
++registry catalog URLs. Omit `registries` to list from every registry configured
++in `components.json`.
++
++**Input:** `registries` (string[], optional — omit for all configured), `types` (string[], optional — e.g. `["ui", "block"]`), `limit` (number, optional, defaults to 100), `offset` (number, optional)
++
++### `shadcn:search_items_in_registries`
++
++Fuzzy search across registries. Registries can be configured namespaces, public
++GitHub sources, or registry catalog URLs. Omit `registries` to search every
++registry configured in `components.json` — e.g. "find me a hero" across all
++configured registries.
++
++**Input:** `registries` (string[], optional — omit for all configured), `query` (string), `types` (string[], optional — e.g. `["ui", "block"]`), `limit` (number, optional, defaults to 100), `offset` (number, optional)
++
++### `shadcn:view_items_in_registries`
++
++View item details including full file contents.
++
++**Input:** `items` (string[]) — e.g.
++`["@shadcn/button", "@shadcn/card", "owner/repo/item"]`
++
++### `shadcn:get_item_examples_from_registries`
++
++Find usage examples and demos with source code. Omit `registries` to search
++every registry configured in `components.json`.
++
++**Input:** `registries` (string[], optional — omit for all configured), `query` (string) — e.g. `"accordion-demo"`, `"button example"`
++
++### `shadcn:get_add_command_for_items`
++
++Returns the CLI install command.
++
++**Input:** `items` (string[]) — e.g. `["@shadcn/button"]`
++
++### `shadcn:get_audit_checklist`
++
++Returns a checklist for verifying components (imports, deps, lint, TypeScript).
++
++**Input:** none
++
++---
++
++## Configuring Registries
++
++Namespaced and authenticated registries are set in `components.json`. The
++`@shadcn` registry is always built-in. Public GitHub registries can also be used
++directly as `owner/repo` registry sources when the repository has a root
++`registry.json`; they do not need `components.json` configuration.
++
++```json
++{
++  "registries": {
++    "@acme": "https://acme.com/r/{name}.json",
++    "@private": {
++      "url": "https://private.com/r/{name}.json",
++      "headers": { "Authorization": "Bearer ${MY_TOKEN}" }
++    }
++  }
++}
++```
++
++- Names must start with `@`.
++- URLs must contain `{name}`.
++- `${VAR}` references are resolved from environment variables.
++
++Community registry index: `https://ui.shadcn.com/r/registries.json`
+diff --git a/.claude/skills/shadcn/registry.md b/.claude/skills/shadcn/registry.md
+new file mode 100644
+index 0000000..5369468
+--- /dev/null
++++ b/.claude/skills/shadcn/registry.md
+@@ -0,0 +1,277 @@
++# Registry Authoring and Addresses
++
++Use this reference when the user wants to create, fix, publish, or reason about
++a shadcn registry.
++
++## Mental Model
++
++A registry has two forms:
++
++- **Source registry**: an authored `registry.json` in a project or repository.
++  It may use `include` and file paths that point at source files.
++- **Built registry**: generated JSON files served to CLI consumers, usually
++  from `public/r`. Use `npx shadcn@latest build` to create this form.
++
++The CLI installer consumes registry item payloads. A source registry is a way to
++author those payloads from real files.
++
++Registry items are not limited to React components. They can distribute
++components, hooks, utilities, design tokens, pages, config files, docs, rules,
++workflows, templates, MCP files, and other project files.
++
++## Root `registry.json`
++
++The root registry file should define registry metadata and either `items` or
++`include`.
++
++```json
++{
++  "$schema": "https://ui.shadcn.com/schema/registry.json",
++  "name": "acme",
++  "homepage": "https://acme.com",
++  "items": [
++    {
++      "name": "absolute-url",
++      "type": "registry:lib",
++      "title": "Absolute URL",
++      "description": "A utility to turn any path into an absolute URL.",
++      "files": [
++        {
++          "path": "lib/absolute-url.ts",
++          "type": "registry:lib"
++        }
++      ]
++    }
++  ]
++}
++```
++
++Root registry rules:
++
++- Root `registry.json` must include `name` and `homepage`.
++- `items` is an array of registry item definitions.
++- `include` may be used to split the source registry into multiple files.
++- Included registry files may omit `name` and `homepage`.
++
++## Include
++
++Use `include` to keep large registries modular.
++
++```json
++{
++  "$schema": "https://ui.shadcn.com/schema/registry.json",
++  "name": "acme",
++  "homepage": "https://acme.com",
++  "include": ["registry/ui/registry.json", "registry/blocks/registry.json"]
++}
++```
++
++Include rules:
++
++- Include paths are relative to the `registry.json` that declares them.
++- Include paths must explicitly point to a `registry.json` file.
++- Do not use remote URLs, absolute paths, or parent traversal (`..`).
++- Item file paths are relative to the registry file that declares the item.
++- Duplicate item names fail across the resolved registry.
++
++Example included file:
++
++```json
++{
++  "items": [
++    {
++      "name": "button",
++      "type": "registry:ui",
++      "files": [
++        {
++          "path": "button.tsx",
++          "type": "registry:ui"
++        }
++      ]
++    }
++  ]
++}
++```
++
++If this file is at `registry/ui/registry.json`, then `button.tsx` is read from
++`registry/ui/button.tsx`, and the built item path is emitted relative to the
++root registry.
++
++## Item Definitions
++
++Common item fields:
++
++```json
++{
++  "name": "login-form",
++  "type": "registry:block",
++  "title": "Login Form",
++  "description": "A login form with email and password fields.",
++  "dependencies": ["zod"],
++  "registryDependencies": ["button", "input", "label"],
++  "files": [
++    {
++      "path": "blocks/login-form.tsx",
++      "type": "registry:block"
++    }
++  ],
++  "cssVars": {
++    "light": {
++      "brand": "oklch(0.62 0.18 250)"
++    },
++    "dark": {
++      "brand": "oklch(0.72 0.16 250)"
++    }
++  }
++}
++```
++
++Important fields:
++
++- `name`: the installable item name. It is not necessarily a file path.
++- `type`: one of the registry item types, such as `registry:ui`,
++  `registry:block`, `registry:lib`, `registry:hook`, `registry:file`,
++  `registry:page`, `registry:theme`, `registry:style`, `registry:font`, or
++  `registry:item`.
++- `files`: source files copied or generated by the item.
++- `dependencies`: npm runtime dependencies.
++- `devDependencies`: npm development dependencies.
++- `registryDependencies`: other registry items required by this item.
++- `cssVars`, `css`, `tailwind`, `envVars`, and `docs`: optional install-time
++  additions.
++
++File rules:
++
++- File paths are relative to the declaring `registry.json`.
++- `registry:file` and `registry:page` files require a `target`.
++- Do not use remote file URLs in source registry file paths.
++- Keep source files copy-pasteable: no hidden app-only imports.
++
++## Registry Dependencies
++
++`registryDependencies` entries are item addresses, not file paths.
++
++```json
++{
++  "name": "login-form",
++  "type": "registry:block",
++  "registryDependencies": ["button", "@acme/input", "acme/ui/card#v1.2.0"],
++  "files": [
++    {
++      "path": "blocks/login-form.tsx",
++      "type": "registry:block"
++    }
++  ]
++}
++```
++
++Dependency rules:
++
++- Bare names such as `"button"` mean official shadcn items.
++- Bare names never mean same-registry or same-repository items.
++- Namespaced dependencies use `@namespace/item-name`.
++- GitHub dependencies use `owner/repo/item-name`.
++- Pin GitHub dependencies with `owner/repo/item-name#ref` when needed.
++- Refs are not inherited. If `owner/repo/foo#v2` depends on `bar` from the same
++  repo at `v2`, write `owner/repo/bar#v2`.
++- Do not use relative dependencies such as `"./bar"`.
++
++## Address Schemes
++
++When reasoning about a registry item string, classify it first.
++
++| Address                             | Scheme    | Meaning                                                      |
++| ----------------------------------- | --------- | ------------------------------------------------------------ |
++| `button`                            | shadcn    | Official shadcn item named `button`.                         |
++| `@acme/button`                      | namespace | Item `button` from configured registry `@acme`.              |
++| `@acme/ui/button`                   | namespace | Item `ui/button` from configured registry `@acme`.           |
++| `https://example.com/r/button.json` | url       | Built registry item JSON at that URL.                        |
++| `./button.json`                     | file      | Built registry item JSON on disk.                            |
++| `acme/ui/button`                    | github    | Item `button` from GitHub repo `acme/ui`.                    |
++| `acme/ui/forms/login#main`          | github    | Item `forms/login` from GitHub repo `acme/ui` at ref `main`. |
++
++For namespace and GitHub addresses, slashful item names are allowed and are item
++names, not file paths. Addresses ending in `.json` keep file-address
++precedence, so `acme/ui/data/schema.json` is treated as a file path, not a
++GitHub item address.
++
++## GitHub Registries
++
++A public GitHub repository can act as a source registry when it has a root
++`registry.json`.
++
++```txt
++owner/repo/item-name[#ref]
++```
++
++Rules:
++
++- The first two path segments are GitHub owner and repo.
++- All remaining path segments are the registry item name.
++- The source entrypoint is always root `registry.json`.
++- GitHub registries are source registries consumed directly by the CLI. They do
++  not require `shadcn build` or generated item JSON files.
++- `include` follows the same source-registry rules as local registries.
++- Currently, GitHub addresses support public `github.com` repositories only.
++- Private repos and GitHub Enterprise require explicit product decisions.
++
++When implementing GitHub registry fetching, resolve refs to a commit SHA before
++reading source files. Do not read moving refs directly from
++`raw.githubusercontent.com`, because branch-like refs can be cached for several
++minutes.
++
++Preferred flow:
++
++```txt
++owner/repo[#ref]
++  -> resolve ref with git ls-remote
++  -> commit SHA
++  -> read https://raw.githubusercontent.com/{owner}/{repo}/{sha}/registry.json
++  -> read includes and item files from the same SHA
++```
++
++This keeps a command on one consistent repository snapshot.
++
++Full 40-character commit SHAs are already stable and can be used directly.
++Branches, tags, and short refs require Git so the CLI can resolve them to a
++commit SHA first.
++
++## Build and Verify
++
++Use the CLI to build source registries:
++
++```bash
++npx shadcn@latest build
++npx shadcn@latest build registry.json --output public/r
++```
++
++Use CLI commands to inspect the result:
++
++```bash
++npx shadcn@latest list @acme
++npx shadcn@latest search @acme -q "login"
++npx shadcn@latest view @acme/login-form
++npx shadcn@latest add @acme/login-form --dry-run
++npx shadcn@latest registry validate ./registry.json
++```
++
++Use GitHub addresses directly for public GitHub registries:
++
++```bash
++npx shadcn@latest list owner/repo
++npx shadcn@latest search owner/repo -q "login"
++npx shadcn@latest view owner/repo/item
++npx shadcn@latest add owner/repo/item --dry-run
++npx shadcn@latest registry validate owner/repo
++```
++
++When working on registry implementation in the shadcn/ui codebase:
++
++- Keep address parsing pure and testable.
++- Do not add side effects to validators.
++- Preserve existing behavior for official shadcn, namespace, URL, and file
++  schemes.
++- Add tests for address parsing, source loading, dependency resolution, list,
++  search, view, and add paths.
++- Prefer small source-reader abstractions over a plugin system until there are
++  multiple real providers.
+diff --git a/.claude/skills/shadcn/rules/base-vs-radix.md b/.claude/skills/shadcn/rules/base-vs-radix.md
+new file mode 100644
+index 0000000..c1ed7d1
+--- /dev/null
++++ b/.claude/skills/shadcn/rules/base-vs-radix.md
+@@ -0,0 +1,306 @@
++# Base vs Radix
++
++API differences between `base` and `radix`. Check the `base` field from `npx shadcn@latest info`.
++
++## Contents
++
++- Composition: asChild vs render
++- Button / trigger as non-button element
++- Select (items prop, placeholder, positioning, multiple, object values)
++- ToggleGroup (type vs multiple)
++- Slider (scalar vs array)
++- Accordion (type and defaultValue)
++
++---
++
++## Composition: asChild (radix) vs render (base)
++
++Radix uses `asChild` to replace the default element. Base uses `render`. Don't wrap triggers in extra elements.
++
++**Incorrect:**
++
++```tsx
++<DialogTrigger>
++  <div>
++    <Button>Open</Button>
++  </div>
++</DialogTrigger>
++```
++
++**Correct (radix):**
++
++```tsx
++<DialogTrigger asChild>
++  <Button>Open</Button>
++</DialogTrigger>
++```
++
++**Correct (base):**
++
++```tsx
++<DialogTrigger render={<Button />}>Open</DialogTrigger>
++```
++
++This applies to all trigger and close components: `DialogTrigger`, `SheetTrigger`, `AlertDialogTrigger`, `DropdownMenuTrigger`, `PopoverTrigger`, `TooltipTrigger`, `CollapsibleTrigger`, `DialogClose`, `SheetClose`, `NavigationMenuLink`, `BreadcrumbLink`, `SidebarMenuButton`, `Badge`, `Item`.
++
++---
++
++## Button / trigger as non-button element (base only)
++
++When `render` changes an element to a non-button (`<a>`, `<span>`), add `nativeButton={false}`.
++
++**Incorrect (base):** missing `nativeButton={false}`.
++
++```tsx
++<Button render={<a href="/docs" />}>Read the docs</Button>
++```
++
++**Correct (base):**
++
++```tsx
++<Button render={<a href="/docs" />} nativeButton={false}>
++  Read the docs
++</Button>
++```
++
++**Correct (radix):**
++
++```tsx
++<Button asChild>
++  <a href="/docs">Read the docs</a>
++</Button>
++```
++
++Same for triggers whose `render` is not a `Button`:
++
++```tsx
++// base.
++<PopoverTrigger render={<InputGroupAddon />} nativeButton={false}>
++  Pick date
++</PopoverTrigger>
++```
++
++---
++
++## Select
++
++**items prop (base only).** Base requires an `items` prop on the root. Radix uses inline JSX only.
++
++**Incorrect (base):**
++
++```tsx
++<Select>
++  <SelectTrigger><SelectValue placeholder="Select a fruit" /></SelectTrigger>
++</Select>
++```
++
++**Correct (base):**
++
++```tsx
++const items = [
++  { label: "Select a fruit", value: null },
++  { label: "Apple", value: "apple" },
++  { label: "Banana", value: "banana" },
++]
++
++<Select items={items}>
++  <SelectTrigger>
++    <SelectValue />
++  </SelectTrigger>
++  <SelectContent>
++    <SelectGroup>
++      {items.map((item) => (
++        <SelectItem key={item.value} value={item.value}>{item.label}</SelectItem>
++      ))}
++    </SelectGroup>
++  </SelectContent>
++</Select>
++```
++
++**Correct (radix):**
++
++```tsx
++<Select>
++  <SelectTrigger>
++    <SelectValue placeholder="Select a fruit" />
++  </SelectTrigger>
++  <SelectContent>
++    <SelectGroup>
++      <SelectItem value="apple">Apple</SelectItem>
++      <SelectItem value="banana">Banana</SelectItem>
++    </SelectGroup>
++  </SelectContent>
++</Select>
++```
++
++**Placeholder.** Base uses a `{ value: null }` item in the items array. Radix uses `<SelectValue placeholder="...">`.
++
++**Content positioning.** Base uses `alignItemWithTrigger`. Radix uses `position`.
++
++```tsx
++// base.
++<SelectContent alignItemWithTrigger={false} side="bottom">
++
++// radix.
++<SelectContent position="popper">
++```
++
++---
++
++## Select — multiple selection and object values (base only)
++
++Base supports `multiple`, render-function children on `SelectValue`, and object values with `itemToStringValue`. Radix is single-select with string values only.
++
++**Correct (base — multiple selection):**
++
++```tsx
++<Select items={items} multiple defaultValue={[]}>
++  <SelectTrigger>
++    <SelectValue>
++      {(value: string[]) => value.length === 0 ? "Select fruits" : `${value.length} selected`}
++    </SelectValue>
++  </SelectTrigger>
++  ...
++</Select>
++```
++
++**Correct (base — object values):**
++
++```tsx
++<Select defaultValue={plans[0]} itemToStringValue={(plan) => plan.name}>
++  <SelectTrigger>
++    <SelectValue>{(value) => value.name}</SelectValue>
++  </SelectTrigger>
++  ...
++</Select>
++```
++
++---
++
++## ToggleGroup
++
++Base uses a `multiple` boolean prop. Radix uses `type="single"` or `type="multiple"`.
++
++**Incorrect (base):**
++
++```tsx
++<ToggleGroup type="single" defaultValue="daily">
++  <ToggleGroupItem value="daily">Daily</ToggleGroupItem>
++</ToggleGroup>
++```
++
++**Correct (base):**
++
++```tsx
++// Single (no prop needed), defaultValue is always an array.
++<ToggleGroup defaultValue={["daily"]} spacing={2}>
++  <ToggleGroupItem value="daily">Daily</ToggleGroupItem>
++  <ToggleGroupItem value="weekly">Weekly</ToggleGroupItem>
++</ToggleGroup>
++
++// Multi-selection.
++<ToggleGroup multiple>
++  <ToggleGroupItem value="bold">Bold</ToggleGroupItem>
++  <ToggleGroupItem value="italic">Italic</ToggleGroupItem>
++</ToggleGroup>
++```
++
++**Correct (radix):**
++
++```tsx
++// Single, defaultValue is a string.
++<ToggleGroup type="single" defaultValue="daily" spacing={2}>
++  <ToggleGroupItem value="daily">Daily</ToggleGroupItem>
++  <ToggleGroupItem value="weekly">Weekly</ToggleGroupItem>
++</ToggleGroup>
++
++// Multi-selection.
++<ToggleGroup type="multiple">
++  <ToggleGroupItem value="bold">Bold</ToggleGroupItem>
++  <ToggleGroupItem value="italic">Italic</ToggleGroupItem>
++</ToggleGroup>
++```
++
++**Controlled single value:**
++
++```tsx
++// base — wrap/unwrap arrays.
++const [value, setValue] = React.useState("normal")
++<ToggleGroup value={[value]} onValueChange={(v) => setValue(v[0])}>
++
++// radix — plain string.
++const [value, setValue] = React.useState("normal")
++<ToggleGroup type="single" value={value} onValueChange={setValue}>
++```
++
++---
++
++## Slider
++
++Base accepts a plain number for a single thumb. Radix always requires an array.
++
++**Incorrect (base):**
++
++```tsx
++<Slider defaultValue={[50]} max={100} step={1} />
++```
++
++**Correct (base):**
++
++```tsx
++<Slider defaultValue={50} max={100} step={1} />
++```
++
++**Correct (radix):**
++
++```tsx
++<Slider defaultValue={[50]} max={100} step={1} />
++```
++
++Both use arrays for range sliders. Controlled `onValueChange` in base may need a cast:
++
++```tsx
++// base.
++const [value, setValue] = React.useState([0.3, 0.7])
++<Slider value={value} onValueChange={(v) => setValue(v as number[])} />
++
++// radix.
++const [value, setValue] = React.useState([0.3, 0.7])
++<Slider value={value} onValueChange={setValue} />
++```
++
++---
++
++## Accordion
++
++Radix requires `type="single"` or `type="multiple"` and supports `collapsible`. `defaultValue` is a string. Base uses no `type` prop, uses `multiple` boolean, and `defaultValue` is always an array.
++
++**Incorrect (base):**
++
++```tsx
++<Accordion type="single" collapsible defaultValue="item-1">
++  <AccordionItem value="item-1">...</AccordionItem>
++</Accordion>
++```
++
++**Correct (base):**
++
++```tsx
++<Accordion defaultValue={["item-1"]}>
++  <AccordionItem value="item-1">...</AccordionItem>
++</Accordion>
++
++// Multi-select.
++<Accordion multiple defaultValue={["item-1", "item-2"]}>
++  <AccordionItem value="item-1">...</AccordionItem>
++  <AccordionItem value="item-2">...</AccordionItem>
++</Accordion>
++```
++
++**Correct (radix):**
++
++```tsx
++<Accordion type="single" collapsible defaultValue="item-1">
++  <AccordionItem value="item-1">...</AccordionItem>
++</Accordion>
++```
+diff --git a/.claude/skills/shadcn/rules/chat.md b/.claude/skills/shadcn/rules/chat.md
+new file mode 100644
+index 0000000..9e1a6bf
+--- /dev/null
++++ b/.claude/skills/shadcn/rules/chat.md
+@@ -0,0 +1,250 @@
++# Chat & Messaging
++
++Components for conversation and chat UI. Compose these instead of hand-rolling
++bubbles, scroll containers, dividers, or attachment cards.
++
++Install: `npx shadcn@latest add message-scroller message bubble attachment marker`
++
++The same component names and props ship for both `base` and `radix`; only
++composition differs (`render` vs `asChild`). See [base-vs-radix.md](./base-vs-radix.md).
++
++## Contents
++
++- Scrollable threads use MessageScroller
++- Message rows use Message
++- Message surfaces use Bubble
++- Attachments use Attachment
++- System notes and dividers use Marker
++- Streaming, anchoring, and jump-to-latest are built in
++- Escape hatch: the scroller hooks
++
++---
++
++## Scrollable threads use MessageScroller
++
++A conversation that scrolls, follows new messages, restores position, or jumps
++to a message uses `MessageScroller`. Don't build a raw overflow container with
++manual scroll wiring, and don't reach for `ScrollArea`.
++
++The parts nest in a fixed order. Every direct child of the content is wrapped in
++a `MessageScrollerItem` so the scroller can measure, anchor, preserve position,
++track visibility, and jump to it. `MessageScrollerButton` sits inside
++`MessageScroller`, after the viewport.
++
++**Incorrect:**
++
++```tsx
++// Hand-rolled scroll container with manual stick-to-bottom logic.
++<div ref={scrollRef} onScroll={handleScroll} className="flex-1 overflow-y-auto">
++  <div className="flex flex-col gap-6 p-4">
++    {messages.map((m) => (
++      <ChatMessage key={m.id} message={m} />
++    ))}
++  </div>
++</div>
++```
++
++**Correct:**
++
++```tsx
++<MessageScrollerProvider autoScroll>
++  <MessageScroller>
++    <MessageScrollerViewport>
++      <MessageScrollerContent>
++        {messages.map((message) => (
++          <MessageScrollerItem
++            key={message.id}
++            messageId={message.id}
++            scrollAnchor={message.role === "user"}
++          >
++            <Message align={message.role === "user" ? "end" : "start"}>
++              {/* ...message content... */}
++            </Message>
++          </MessageScrollerItem>
++        ))}
++      </MessageScrollerContent>
++    </MessageScrollerViewport>
++    <MessageScrollerButton />
++  </MessageScroller>
++</MessageScrollerProvider>
++```
++
++---
++
++## Message rows use Message
++
++`Message` lays out a single row: avatar, header, content, footer, with
++alignment. Group consecutive rows from one sender with `MessageGroup`. Don't
++rebuild the row from flex divs.
++
++`align="end"` is the current user's side; `align="start"` is everyone else.
++
++```tsx
++<Message align="start">
++  <MessageAvatar>
++    <Avatar>
++      <AvatarImage src={sender.avatar} alt={sender.name} />
++      <AvatarFallback>{initials}</AvatarFallback>
++    </Avatar>
++  </MessageAvatar>
++  <MessageContent>
++    <MessageHeader>{sender.name}</MessageHeader>
++    <Bubble>
++      <BubbleContent>{text}</BubbleContent>
++    </Bubble>
++    <MessageFooter>{time}</MessageFooter>
++  </MessageContent>
++</Message>
++```
++
++---
++
++## Message surfaces use Bubble
++
++The colored message surface is `Bubble` + `BubbleContent`, never a styled `div`
++with `bg-muted` / `bg-primary` and hand-managed corners.
++
++- `variant`: `default`, `secondary`, `muted`, `tinted`, `outline`, `ghost`, `destructive`.
++- `align`: `start` or `end` (matches the `Message` side).
++
++`BubbleReactions` renders the reaction cluster. `side` (`top` | `bottom`) and
++`align` (`start` | `end`) position it against the bubble. Don't lay reactions out
++with absolutely-positioned `Badge`s.
++
++**Incorrect:**
++
++```tsx
++<div className="w-fit rounded-2xl bg-primary px-3 py-2 text-primary-foreground">
++  {text}
++</div>
++```
++
++**Correct:**
++
++```tsx
++<Bubble variant="default" align="end">
++  <BubbleContent>{text}</BubbleContent>
++  <BubbleReactions side="bottom" align="end">
++    <Badge variant="secondary">👍 2</Badge>
++  </BubbleReactions>
++</Bubble>
++```
++
++---
++
++## Attachments use Attachment
++
++File and image attachments use `Attachment`, not `Item` or a custom card. It
++carries upload state, so wire `state` to the real status rather than rendering a
++separate spinner.
++
++- `state`: `idle`, `uploading`, `processing`, `error`, `done`. `uploading` and
++  `processing` apply the `shimmer` animation to the title automatically.
++- `size`: `default`, `sm`, `xs`. `orientation`: `horizontal`, `vertical`.
++- Use `AttachmentGroup` to lay out several attachments in a scrolling row.
++
++```tsx
++<Attachment state="done">
++  <AttachmentMedia variant="icon">
++    <FileTextIcon />
++  </AttachmentMedia>
++  <AttachmentContent>
++    <AttachmentTitle>homepage-feedback.pdf</AttachmentTitle>
++    <AttachmentDescription>PDF · 2.4 MB</AttachmentDescription>
++  </AttachmentContent>
++  <AttachmentActions>
++    <AttachmentAction>
++      <DownloadIcon />
++    </AttachmentAction>
++  </AttachmentActions>
++</Attachment>
++```
++
++For an image, use `<AttachmentMedia variant="image">` with an `img` child.
++
++---
++
++## System notes and dividers use Marker
++
++Status lines ("Sarah joined the conversation"), date dividers ("Today"), and
++labeled separators are `Marker`, not a `Separator` plus a centered span.
++
++- `variant`: `default` (plain row), `separator` (centered label with rules on
++  each side), `border` (bottom-bordered row).
++- `MarkerIcon` holds a leading icon; `MarkerContent` holds the label.
++
++**Incorrect:**
++
++```tsx
++<div className="flex items-center gap-3 py-2">
++  <Separator className="flex-1" />
++  <span className="text-xs text-muted-foreground">Today</span>
++  <Separator className="flex-1" />
++</div>
++```
++
++**Correct:**
++
++```tsx
++<Marker variant="separator">
++  <MarkerContent>Today</MarkerContent>
++</Marker>
++```
++
++---
++
++## Streaming, anchoring, and jump-to-latest are built in
++
++`MessageScroller` handles the behavior that chat UIs usually reinvent. Don't
++write a `useStickToBottom` hook, a `ResizeObserver`, or manual `scrollTop` math.
++
++- **Follow the live edge while streaming.** `MessageScrollerProvider` with
++  `autoScroll` keeps the view pinned to new content and yields the moment the
++  user scrolls up. Streaming token updates that grow the last message are
++  followed automatically.
++- **Anchor a turn.** `scrollAnchor` on a `MessageScrollerItem` marks the row to
++  hold in view (typically the user's message that started the turn).
++- **Jump to latest.** `MessageScrollerButton` appears when the user scrolls away
++  and scrolls back on click. `direction="end"` (default) or `direction="start"`.
++  It is a self-managing control, so don't gate it behind your own scroll-position
++  state.
++- **Open a saved transcript without a flash.** `defaultScrollPosition` applies
++  after mount. When it is `"end"` or `"last-anchor"`, the viewport has
++  `data-pending-scroll` until that position is applied. The styled viewport
++  hides. For `"end"` on first paint when messages are in the server HTML, copy
++  this script into the page, not into the primitive. Skip it for `"last-anchor"`
++  and for client-fetched messages. Keep `suppressHydrationWarning` on the
++  viewport. Pass a `nonce` if you use a Content Security Policy.
++
++```tsx
++const scrollToEndScript = `(function () {
++  var viewport = document.getElementById("messages")
++  if (!viewport) {
++    return
++  }
++  viewport.scrollTop = viewport.scrollHeight
++  viewport.removeAttribute("data-pending-scroll")
++})()`
++
++<MessageScroller>
++  <MessageScrollerViewport id="messages" suppressHydrationWarning>
++    <MessageScrollerContent>{/* transcript */}</MessageScrollerContent>
++  </MessageScrollerViewport>
++  <script dangerouslySetInnerHTML={{ __html: scrollToEndScript }} />
++  <MessageScrollerButton />
++</MessageScroller>
++```
++
++For a "thinking…" indicator while the model generates, apply the `shimmer`
++utility to text. Don't author a custom keyframe animation. See
++[styling.md](./styling.md).
++
++---
++
++## Escape hatch: the scroller hooks
++
++For behavior the parts don't expose, read state from the hooks rather than
++re-implementing the scroller: `useMessageScroller`,
++`useMessageScrollerVisibility`, and `useMessageScrollerScrollable`. They come
++from the auto-installed `@shadcn/react` dependency, so there's nothing extra to
++install. Reach for them only when composition can't express what you need.
+diff --git a/.claude/skills/shadcn/rules/composition.md b/.claude/skills/shadcn/rules/composition.md
+new file mode 100644
+index 0000000..a8aa427
+--- /dev/null
++++ b/.claude/skills/shadcn/rules/composition.md
+@@ -0,0 +1,213 @@
++# Component Composition
++
++## Contents
++
++- Items always inside their Group component
++- Callouts use Alert
++- Empty states use Empty component
++- Toast notifications follow the project base
++- Choosing between overlay components
++- Dialog, Sheet, and Drawer always need a Title
++- Card structure
++- Button has no isPending or isLoading prop
++- TabsTrigger must be inside TabsList
++- Avatar always needs AvatarFallback
++- Use Separator instead of raw hr or border divs
++- Use Skeleton for loading placeholders
++- Use Badge instead of custom styled spans
++
++---
++
++## Items always inside their Group component
++
++Never render items directly inside the content container.
++
++**Incorrect:**
++
++```tsx
++<SelectContent>
++  <SelectItem value="apple">Apple</SelectItem>
++  <SelectItem value="banana">Banana</SelectItem>
++</SelectContent>
++```
++
++**Correct:**
++
++```tsx
++<SelectContent>
++  <SelectGroup>
++    <SelectItem value="apple">Apple</SelectItem>
++    <SelectItem value="banana">Banana</SelectItem>
++  </SelectGroup>
++</SelectContent>
++```
++
++This applies to all group-based components:
++
++| Item | Group |
++|------|-------|
++| `SelectItem`, `SelectLabel` | `SelectGroup` |
++| `DropdownMenuItem`, `DropdownMenuLabel`, `DropdownMenuSub` | `DropdownMenuGroup` |
++| `MenubarItem` | `MenubarGroup` |
++| `ContextMenuItem` | `ContextMenuGroup` |
++| `CommandItem` | `CommandGroup` |
++| `MessageScrollerItem` | `MessageScrollerContent` |
++| `Message` (consecutive, same sender) | `MessageGroup` |
++| `Bubble` (stacked) | `BubbleGroup` |
++| `Attachment` (in a row) | `AttachmentGroup` |
++
++Chat components nest in a fixed order (`MessageScrollerProvider` → `MessageScroller` → `MessageScrollerViewport` → `MessageScrollerContent` → `MessageScrollerItem`). See [chat.md](./chat.md).
++
++---
++
++## Callouts use Alert
++
++```tsx
++<Alert>
++  <AlertTitle>Warning</AlertTitle>
++  <AlertDescription>Something needs attention.</AlertDescription>
++</Alert>
++```
++
++---
++
++## Empty states use Empty component
++
++```tsx
++<Empty>
++  <EmptyHeader>
++    <EmptyMedia variant="icon"><FolderIcon /></EmptyMedia>
++    <EmptyTitle>No projects yet</EmptyTitle>
++    <EmptyDescription>Get started by creating a new project.</EmptyDescription>
++  </EmptyHeader>
++  <EmptyContent>
++    <Button>Create Project</Button>
++  </EmptyContent>
++</Empty>
++```
++
++---
++
++## Toast notifications follow the project base
++
++For Base UI projects, use the `toast` component:
++
++```tsx
++import { toast } from "@/components/ui/toast"
++
++toast.add({
++  title: "Changes saved.",
++})
++```
++
++For Radix and React Aria projects, use Sonner:
++
++```tsx
++import { toast } from "sonner"
++
++toast.success("Changes saved.")
++toast.error("Something went wrong.")
++toast("File deleted.", {
++  action: { label: "Undo", onClick: () => undoDelete() },
++})
++```
++
++---
++
++## Choosing between overlay components
++
++| Use case | Component |
++|----------|-----------|
++| Focused task that requires input | `Dialog` |
++| Destructive action confirmation | `AlertDialog` |
++| Side panel with details or filters | `Sheet` |
++| Mobile-first bottom panel | `Drawer` |
++| Quick info on hover | `HoverCard` |
++| Small contextual content on click | `Popover` |
++
++---
++
++## Dialog, Sheet, and Drawer always need a Title
++
++`DialogTitle`, `SheetTitle`, `DrawerTitle` are required for accessibility. Use `className="sr-only"` if visually hidden.
++
++```tsx
++<DialogContent>
++  <DialogHeader>
++    <DialogTitle>Edit Profile</DialogTitle>
++    <DialogDescription>Update your profile.</DialogDescription>
++  </DialogHeader>
++  ...
++</DialogContent>
++```
++
++---
++
++## Card structure
++
++Use full composition — don't dump everything into `CardContent`:
++
++```tsx
++<Card>
++  <CardHeader>
++    <CardTitle>Team Members</CardTitle>
++    <CardDescription>Manage your team.</CardDescription>
++  </CardHeader>
++  <CardContent>...</CardContent>
++  <CardFooter>
++    <Button>Invite</Button>
++  </CardFooter>
++</Card>
++```
++
++---
++
++## Button has no isPending or isLoading prop
++
++Compose with `Spinner` + `data-icon` + `disabled`:
++
++```tsx
++<Button disabled>
++  <Spinner data-icon="inline-start" />
++  Saving...
++</Button>
++```
++
++---
++
++## TabsTrigger must be inside TabsList
++
++Never render `TabsTrigger` directly inside `Tabs` — always wrap in `TabsList`:
++
++```tsx
++<Tabs defaultValue="account">
++  <TabsList>
++    <TabsTrigger value="account">Account</TabsTrigger>
++    <TabsTrigger value="password">Password</TabsTrigger>
++  </TabsList>
++  <TabsContent value="account">...</TabsContent>
++</Tabs>
++```
++
++---
++
++## Avatar always needs AvatarFallback
++
++Always include `AvatarFallback` for when the image fails to load:
++
++```tsx
++<Avatar>
++  <AvatarImage src="/avatar.png" alt="User" />
++  <AvatarFallback>JD</AvatarFallback>
++</Avatar>
++```
++
++---
++
++## Use existing components instead of custom markup
++
++| Instead of | Use |
++|---|---|
++| `<hr>` or `<div className="border-t">` | `<Separator />` |
++| `<div className="animate-pulse">` with styled divs | `<Skeleton className="h-4 w-3/4" />` |
++| `<span className="rounded-full bg-green-100 ...">` | `<Badge variant="secondary">` |
+diff --git a/.claude/skills/shadcn/rules/forms.md b/.claude/skills/shadcn/rules/forms.md
+new file mode 100644
+index 0000000..f451e2f
+--- /dev/null
++++ b/.claude/skills/shadcn/rules/forms.md
+@@ -0,0 +1,192 @@
++# Forms & Inputs
++
++## Contents
++
++- Forms use FieldGroup + Field
++- InputGroup requires InputGroupInput/InputGroupTextarea
++- Buttons inside inputs use InputGroup + InputGroupAddon
++- Option sets (2–7 choices) use ToggleGroup
++- FieldSet + FieldLegend for grouping related fields
++- Field validation and disabled states
++
++---
++
++## Forms use FieldGroup + Field
++
++Always use `FieldGroup` + `Field` — never raw `div` with `space-y-*`:
++
++```tsx
++<FieldGroup>
++  <Field>
++    <FieldLabel htmlFor="email">Email</FieldLabel>
++    <Input id="email" type="email" />
++  </Field>
++  <Field>
++    <FieldLabel htmlFor="password">Password</FieldLabel>
++    <Input id="password" type="password" />
++  </Field>
++</FieldGroup>
++```
++
++Use `Field orientation="horizontal"` for settings pages. Use `FieldLabel className="sr-only"` for visually hidden labels.
++
++**Choosing form controls:**
++
++- Simple text input → `Input`
++- Dropdown with predefined options → `Select`
++- Searchable dropdown → `Combobox`
++- Native HTML select (no JS) → `native-select`
++- Boolean toggle → `Switch` (for settings) or `Checkbox` (for forms)
++- Single choice from few options → `RadioGroup`
++- Toggle between 2–5 options → `ToggleGroup` + `ToggleGroupItem`
++- OTP/verification code → `InputOTP`
++- Multi-line text → `Textarea`
++
++---
++
++## InputGroup requires InputGroupInput/InputGroupTextarea
++
++Never use raw `Input` or `Textarea` inside an `InputGroup`.
++
++**Incorrect:**
++
++```tsx
++<InputGroup>
++  <Input placeholder="Search..." />
++</InputGroup>
++```
++
++**Correct:**
++
++```tsx
++import { InputGroup, InputGroupInput } from "@/components/ui/input-group"
++
++<InputGroup>
++  <InputGroupInput placeholder="Search..." />
++</InputGroup>
++```
++
++---
++
++## Buttons inside inputs use InputGroup + InputGroupAddon
++
++Never place a `Button` directly inside or adjacent to an `Input` with custom positioning.
++
++**Incorrect:**
++
++```tsx
++<div className="relative">
++  <Input placeholder="Search..." className="pr-10" />
++  <Button className="absolute right-0 top-0" size="icon">
++    <SearchIcon />
++  </Button>
++</div>
++```
++
++**Correct:**
++
++```tsx
++import { InputGroup, InputGroupInput, InputGroupAddon } from "@/components/ui/input-group"
++
++<InputGroup>
++  <InputGroupInput placeholder="Search..." />
++  <InputGroupAddon>
++    <Button size="icon">
++      <SearchIcon data-icon="inline-start" />
++    </Button>
++  </InputGroupAddon>
++</InputGroup>
++```
++
++---
++
++## Option sets (2–7 choices) use ToggleGroup
++
++Don't manually loop `Button` components with active state.
++
++**Incorrect:**
++
++```tsx
++const [selected, setSelected] = useState("daily")
++
++<div className="flex gap-2">
++  {["daily", "weekly", "monthly"].map((option) => (
++    <Button
++      key={option}
++      variant={selected === option ? "default" : "outline"}
++      onClick={() => setSelected(option)}
++    >
++      {option}
++    </Button>
++  ))}
++</div>
++```
++
++**Correct:**
++
++```tsx
++import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
++
++<ToggleGroup spacing={2}>
++  <ToggleGroupItem value="daily">Daily</ToggleGroupItem>
++  <ToggleGroupItem value="weekly">Weekly</ToggleGroupItem>
++  <ToggleGroupItem value="monthly">Monthly</ToggleGroupItem>
++</ToggleGroup>
++```
++
++Combine with `Field` for labelled toggle groups:
++
++```tsx
++<Field orientation="horizontal">
++  <FieldTitle id="theme-label">Theme</FieldTitle>
++  <ToggleGroup aria-labelledby="theme-label" spacing={2}>
++    <ToggleGroupItem value="light">Light</ToggleGroupItem>
++    <ToggleGroupItem value="dark">Dark</ToggleGroupItem>
++    <ToggleGroupItem value="system">System</ToggleGroupItem>
++  </ToggleGroup>
++</Field>
++```
++
++> **Note:** `defaultValue` and `type`/`multiple` props differ between base and radix. See [base-vs-radix.md](./base-vs-radix.md#togglegroup).
++
++---
++
++## FieldSet + FieldLegend for grouping related fields
++
++Use `FieldSet` + `FieldLegend` for related checkboxes, radios, or switches — not `div` with a heading:
++
++```tsx
++<FieldSet>
++  <FieldLegend variant="label">Preferences</FieldLegend>
++  <FieldDescription>Select all that apply.</FieldDescription>
++  <FieldGroup className="gap-3">
++    <Field orientation="horizontal">
++      <Checkbox id="dark" />
++      <FieldLabel htmlFor="dark" className="font-normal">Dark mode</FieldLabel>
++    </Field>
++  </FieldGroup>
++</FieldSet>
++```
++
++---
++
++## Field validation and disabled states
++
++Both attributes are needed — `data-invalid`/`data-disabled` styles the field (label, description), while `aria-invalid`/`disabled` styles the control.
++
++```tsx
++// Invalid.
++<Field data-invalid>
++  <FieldLabel htmlFor="email">Email</FieldLabel>
++  <Input id="email" aria-invalid />
++  <FieldDescription>Invalid email address.</FieldDescription>
++</Field>
++
++// Disabled.
++<Field data-disabled>
++  <FieldLabel htmlFor="email">Email</FieldLabel>
++  <Input id="email" disabled />
++</Field>
++```
++
++Works for all controls: `Input`, `Textarea`, `Select`, `Checkbox`, `RadioGroupItem`, `Switch`, `Slider`, `NativeSelect`, `InputOTP`.
+diff --git a/.claude/skills/shadcn/rules/icons.md b/.claude/skills/shadcn/rules/icons.md
+new file mode 100644
+index 0000000..bba8102
+--- /dev/null
++++ b/.claude/skills/shadcn/rules/icons.md
+@@ -0,0 +1,101 @@
++# Icons
++
++**Always use the project's configured `iconLibrary` for imports.** Check the `iconLibrary` field from project context: `lucide` → `lucide-react`, `tabler` → `@tabler/icons-react`, etc. Never assume `lucide-react`.
++
++---
++
++## Icons in Button use data-icon attribute
++
++Add `data-icon="inline-start"` (prefix) or `data-icon="inline-end"` (suffix) to the icon. No sizing classes on the icon.
++
++**Incorrect:**
++
++```tsx
++<Button>
++  <SearchIcon className="mr-2 size-4" />
++  Search
++</Button>
++```
++
++**Correct:**
++
++```tsx
++<Button>
++  <SearchIcon data-icon="inline-start"/>
++  Search
++</Button>
++
++<Button>
++  Next
++  <ArrowRightIcon data-icon="inline-end"/>
++</Button>
++```
++
++---
++
++## No sizing classes on icons inside components
++
++Components handle icon sizing via CSS. Don't add `size-4`, `w-4 h-4`, or other sizing classes to icons inside `Button`, `DropdownMenuItem`, `Alert`, `Sidebar*`, or other shadcn components. Unless the user explicitly asks for custom icon sizes.
++
++**Incorrect:**
++
++```tsx
++<Button>
++  <SearchIcon className="size-4" data-icon="inline-start" />
++  Search
++</Button>
++
++<DropdownMenuItem>
++  <SettingsIcon className="mr-2 size-4" />
++  Settings
++</DropdownMenuItem>
++```
++
++**Correct:**
++
++```tsx
++<Button>
++  <SearchIcon data-icon="inline-start" />
++  Search
++</Button>
++
++<DropdownMenuItem>
++  <SettingsIcon />
++  Settings
++</DropdownMenuItem>
++```
++
++---
++
++## Pass icons as component objects, not string keys
++
++Use `icon={CheckIcon}`, not a string key to a lookup map.
++
++**Incorrect:**
++
++```tsx
++const iconMap = {
++  check: CheckIcon,
++  alert: AlertIcon,
++}
++
++function StatusBadge({ icon }: { icon: string }) {
++  const Icon = iconMap[icon]
++  return <Icon />
++}
++
++<StatusBadge icon="check" />
++```
++
++**Correct:**
++
++```tsx
++// Import from the project's configured iconLibrary (e.g. lucide-react, @tabler/icons-react).
++import { CheckIcon } from "lucide-react"
++
++function StatusBadge({ icon: Icon }: { icon: React.ComponentType }) {
++  return <Icon />
++}
++
++<StatusBadge icon={CheckIcon} />
++```
+diff --git a/.claude/skills/shadcn/rules/styling.md b/.claude/skills/shadcn/rules/styling.md
+new file mode 100644
+index 0000000..4e6e063
+--- /dev/null
++++ b/.claude/skills/shadcn/rules/styling.md
+@@ -0,0 +1,185 @@
++# Styling & Customization
++
++See [customization.md](../customization.md) for theming, CSS variables, and adding custom colors.
++
++## Contents
++
++- Semantic colors
++- Built-in variants first
++- className for layout only
++- No space-x-* / space-y-*
++- Prefer size-* over w-* h-* when equal
++- Prefer truncate shorthand
++- No manual dark: color overrides
++- Use cn() for conditional classes
++- No manual z-index on overlay components
++- Use shimmer / scroll-fade utilities, not custom animations
++
++---
++
++## Semantic colors
++
++**Incorrect:**
++
++```tsx
++<div className="bg-blue-500 text-white">
++  <p className="text-gray-600">Secondary text</p>
++</div>
++```
++
++**Correct:**
++
++```tsx
++<div className="bg-primary text-primary-foreground">
++  <p className="text-muted-foreground">Secondary text</p>
++</div>
++```
++
++---
++
++## No raw color values for status/state indicators
++
++For positive, negative, or status indicators, use Badge variants, semantic tokens like `text-destructive`, or define custom CSS variables — don't reach for raw Tailwind colors.
++
++**Incorrect:**
++
++```tsx
++<span className="text-emerald-600">+20.1%</span>
++<span className="text-green-500">Active</span>
++<span className="text-red-600">-3.2%</span>
++```
++
++**Correct:**
++
++```tsx
++<Badge variant="secondary">+20.1%</Badge>
++<Badge>Active</Badge>
++<span className="text-destructive">-3.2%</span>
++```
++
++If you need a success/positive color that doesn't exist as a semantic token, use a Badge variant or ask the user about adding a custom CSS variable to the theme (see [customization.md](../customization.md)).
++
++---
++
++## Built-in variants first
++
++**Incorrect:**
++
++```tsx
++<Button className="border border-input bg-transparent hover:bg-accent">
++  Click me
++</Button>
++```
++
++**Correct:**
++
++```tsx
++<Button variant="outline">Click me</Button>
++```
++
++---
++
++## className for layout only
++
++Use `className` for layout (e.g. `max-w-md`, `mx-auto`, `mt-4`), **not** for overriding component colors or typography. To change colors, use semantic tokens, built-in variants, or CSS variables.
++
++**Incorrect:**
++
++```tsx
++<Card className="bg-blue-100 text-blue-900 font-bold">
++  <CardContent>Dashboard</CardContent>
++</Card>
++```
++
++**Correct:**
++
++```tsx
++<Card className="max-w-md mx-auto">
++  <CardContent>Dashboard</CardContent>
++</Card>
++```
++
++To customize a component's appearance, prefer these approaches in order:
++1. **Built-in variants** — `variant="outline"`, `variant="destructive"`, etc.
++2. **Semantic color tokens** — `bg-primary`, `text-muted-foreground`.
++3. **CSS variables** — define custom colors in the global CSS file (see [customization.md](../customization.md)).
++
++---
++
++## No space-x-* / space-y-*
++
++Use `gap-*` instead. `space-y-4` → `flex flex-col gap-4`. `space-x-2` → `flex gap-2`.
++
++```tsx
++<div className="flex flex-col gap-4">
++  <Input />
++  <Input />
++  <Button>Submit</Button>
++</div>
++```
++
++---
++
++## Prefer size-* over w-* h-* when equal
++
++`size-10` not `w-10 h-10`. Applies to icons, avatars, skeletons, etc.
++
++---
++
++## Prefer truncate shorthand
++
++`truncate` not `overflow-hidden text-ellipsis whitespace-nowrap`.
++
++---
++
++## No manual dark: color overrides
++
++Use semantic tokens — they handle light/dark via CSS variables. `bg-background text-foreground` not `bg-white dark:bg-gray-950`.
++
++---
++
++## Use cn() for conditional classes
++
++Use the `cn()` utility from the project for conditional or merged class names. Don't write manual ternaries in className strings.
++
++**Incorrect:**
++
++```tsx
++<div className={`flex items-center ${isActive ? "bg-primary text-primary-foreground" : "bg-muted"}`}>
++```
++
++**Correct:**
++
++```tsx
++import { cn } from "cn"
++
++<div className={cn("flex items-center", isActive ? "bg-primary text-primary-foreground" : "bg-muted")}>
++```
++
++---
++
++## No manual z-index on overlay components
++
++`Dialog`, `Sheet`, `Drawer`, `AlertDialog`, `DropdownMenu`, `Popover`, `Tooltip`, `HoverCard` handle their own stacking. Never add `z-50` or `z-[999]`.
++
++---
++
++## Use shimmer / scroll-fade utilities, not custom animations
++
++For a live "thinking…" or loading-text shimmer, apply the `shimmer` utility. Don't author a custom `@keyframes` or a `bg-clip-text` gradient sweep.
++
++For scroll-aware edge fading on a scroll container, use `scroll-fade` (and the axis variants `scroll-fade-x` / `scroll-fade-b`). Don't hand-roll mask gradients. The chat components already apply these internally: `Attachment` shimmers its title during upload, and `MessageScrollerViewport` fades its edges.
++
++**Incorrect:**
++
++```tsx
++<span className="animate-pulse bg-gradient-to-r from-muted-foreground/40 via-foreground/70 to-muted-foreground/40 bg-clip-text text-transparent [animation:shimmer_1.6s_infinite]">
++  Thinking…
++</span>
++```
++
++**Correct:**
++
++```tsx
++<span className="shimmer">Thinking…</span>
++```
+diff --git a/.claude/skills/vite/GENERATION.md b/.claude/skills/vite/GENERATION.md
+new file mode 100644
+index 0000000..a4b1c4a
+--- /dev/null
++++ b/.claude/skills/vite/GENERATION.md
+@@ -0,0 +1,5 @@
++# Generation Info
++
++- **Source:** `sources/vite`
++- **Git SHA:** `c47015eba4f0de255218c35769628d87152216ca`
++- **Generated:** 2026-01-31
+diff --git a/.claude/skills/vite/SKILL.md b/.claude/skills/vite/SKILL.md
+new file mode 100644
+index 0000000..0a00766
+--- /dev/null
++++ b/.claude/skills/vite/SKILL.md
+@@ -0,0 +1,72 @@
++---
++name: vite
++description: Vite build tool configuration, plugin API, SSR, and Vite 8 Rolldown migration. Use when working with Vite projects, vite.config.ts, Vite plugins, or building libraries/SSR apps with Vite.
++metadata:
++  author: Anthony Fu
++  version: "2026.1.31"
++  source: Generated from https://github.com/vitejs/vite, scripts at https://github.com/antfu/skills
++---
++
++# Vite
++
++> Based on Vite 8 beta (Rolldown-powered). Vite 8 uses Rolldown bundler and Oxc transformer.
++
++Vite is a next-generation frontend build tool with fast dev server (native ESM + HMR) and optimized production builds.
++
++## Preferences
++
++- Use TypeScript: prefer `vite.config.ts`
++- Always use ESM, avoid CommonJS
++
++## Core
++
++| Topic | Description | Reference |
++|-------|-------------|-----------|
++| Configuration | `vite.config.ts`, `defineConfig`, conditional configs, `loadEnv` | [core-config](references/core-config.md) |
++| Features | `import.meta.glob`, asset queries (`?raw`, `?url`), `import.meta.env`, HMR API | [core-features](references/core-features.md) |
++| Plugin API | Vite-specific hooks, virtual modules, plugin ordering | [core-plugin-api](references/core-plugin-api.md) |
++
++## Build & SSR
++
++| Topic | Description | Reference |
++|-------|-------------|-----------|
++| Build & SSR | Library mode, SSR middleware mode, `ssrLoadModule`, JavaScript API | [build-and-ssr](references/build-and-ssr.md) |
++
++## Advanced
++
++| Topic | Description | Reference |
++|-------|-------------|-----------|
++| Environment API | Vite 6+ multi-environment support, custom runtimes | [environment-api](references/environment-api.md) |
++| Rolldown Migration | Vite 8 changes: Rolldown bundler, Oxc transformer, config migration | [rolldown-migration](references/rolldown-migration.md) |
++
++## Quick Reference
++
++### CLI Commands
++
++```bash
++vite              # Start dev server
++vite build        # Production build
++vite preview      # Preview production build
++vite build --ssr  # SSR build
++```
++
++### Common Config
++
++```ts
++import { defineConfig } from 'vite'
++
++export default defineConfig({
++  plugins: [],
++  resolve: { alias: { '@': '/src' } },
++  server: { port: 3000, proxy: { '/api': 'http://localhost:8080' } },
++  build: { target: 'esnext', outDir: 'dist' },
++})
++```
++
++### Official Plugins
++
++- `@vitejs/plugin-vue` - Vue 3 SFC support
++- `@vitejs/plugin-vue-jsx` - Vue 3 JSX
++- `@vitejs/plugin-react` - React with Oxc/Babel
++- `@vitejs/plugin-react-swc` - React with SWC
++- `@vitejs/plugin-legacy` - Legacy browser support
+diff --git a/.claude/skills/vite/references/build-and-ssr.md b/.claude/skills/vite/references/build-and-ssr.md
+new file mode 100644
+index 0000000..ac46a9a
+--- /dev/null
++++ b/.claude/skills/vite/references/build-and-ssr.md
+@@ -0,0 +1,164 @@
++---
++name: vite-build-ssr
++description: Vite library mode, multi-page apps, JavaScript API, and SSR guidance
++---
++
++# Build and SSR
++
++## Library Mode
++
++Build a library for distribution:
++
++```ts
++// vite.config.ts
++import { resolve } from 'node:path'
++import { defineConfig } from 'vite'
++
++export default defineConfig({
++  build: {
++    lib: {
++      entry: resolve(import.meta.dirname, 'lib/main.ts'),
++      name: 'MyLib',
++      fileName: 'my-lib',
++    },
++    rolldownOptions: {
++      external: ['vue', 'react'],
++      output: {
++        globals: {
++          vue: 'Vue',
++          react: 'React',
++        },
++      },
++    },
++  },
++})
++```
++
++### Multiple Entries
++
++```ts
++build: {
++  lib: {
++    entry: {
++      'my-lib': resolve(import.meta.dirname, 'lib/main.ts'),
++      secondary: resolve(import.meta.dirname, 'lib/secondary.ts'),
++    },
++    name: 'MyLib',
++  },
++}
++```
++
++### Output Formats
++
++- Single entry: `es` and `umd`
++- Multiple entries: `es` and `cjs`
++
++### Package.json Setup
++
++```json
++{
++  "name": "my-lib",
++  "type": "module",
++  "files": ["dist"],
++  "main": "./dist/my-lib.umd.cjs",
++  "module": "./dist/my-lib.js",
++  "exports": {
++    ".": {
++      "import": "./dist/my-lib.js",
++      "require": "./dist/my-lib.umd.cjs"
++    },
++    "./style.css": "./dist/my-lib.css"
++  }
++}
++```
++
++## Multi-Page App
++
++```ts
++export default defineConfig({
++  build: {
++    rolldownOptions: {
++      input: {
++        main: resolve(import.meta.dirname, 'index.html'),
++        nested: resolve(import.meta.dirname, 'nested/index.html'),
++      },
++    },
++  },
++})
++```
++
++## SSR Development
++
++**Note:** Vite's SSR support is **low-level** and designed mostly for meta-framework authors, not application developers. If you need SSR for your app, use a Vite-based meta-framework instead:
++
++- **Nuxt** (Vue) - https://nuxt.com
++- **SvelteKit** (Svelte) - https://svelte.dev/docs/kit
++- **SolidStart** (Solid) - https://start.solidjs.com
++- **TanStack Start** (React) - https://tanstack.com/start
++
++These frameworks build on top of Vite's SSR primitives so you don't have to wire them up yourself.
++
++**Need a server?** Consider [Nitro](https://nitro.build) -- think of it as "Vite for servers." Nitro provides a portable, framework-agnostic server layer with file-based API routing, auto-imports, and deployment presets for dozens of platforms (Node.js, Deno, Bun, Cloudflare Workers, Vercel, Netlify, etc.). It integrates naturally with Vite and is what powers Nuxt's server engine. See the [Nitro docs](https://nitro.build) for more details.
++
++## JavaScript API
++
++### createServer
++
++```ts
++import { createServer } from 'vite'
++
++const server = await createServer({
++  configFile: false,
++  root: import.meta.dirname,
++  server: { port: 1337 },
++})
++
++await server.listen()
++server.printUrls()
++```
++
++### build
++
++```ts
++import { build } from 'vite'
++
++await build({
++  root: './project',
++  build: { outDir: 'dist' },
++})
++```
++
++### preview
++
++```ts
++import { preview } from 'vite'
++
++const previewServer = await preview({
++  preview: { port: 8080, open: true },
++})
++previewServer.printUrls()
++```
++
++### resolveConfig
++
++```ts
++import { resolveConfig } from 'vite'
++
++const config = await resolveConfig({}, 'build')
++```
++
++### loadEnv
++
++```ts
++import { loadEnv } from 'vite'
++
++const env = loadEnv('development', process.cwd(), '')
++// Loads all env vars (empty prefix = no filtering)
++```
++
++<!--
++Source references:
++- https://vite.dev/guide/build
++- https://vite.dev/guide/api-javascript
++- https://nitro.build
++-->
+diff --git a/.claude/skills/vite/references/core-config.md b/.claude/skills/vite/references/core-config.md
+new file mode 100644
+index 0000000..039ba52
+--- /dev/null
++++ b/.claude/skills/vite/references/core-config.md
+@@ -0,0 +1,162 @@
++---
++name: vite-config
++description: Vite configuration patterns using vite.config.ts
++---
++
++# Vite Configuration
++
++## Basic Setup
++
++```ts
++// vite.config.ts
++import { defineConfig } from 'vite'
++
++export default defineConfig({
++  // config options
++})
++```
++
++Vite auto-resolves `vite.config.ts` from project root. Supports ES modules syntax regardless of `package.json` type.
++
++## Conditional Config
++
++Export a function to access command and mode:
++
++```ts
++export default defineConfig(({ command, mode, isSsrBuild, isPreview }) => {
++  if (command === 'serve') {
++    return { /* dev config */ }
++  } else {
++    return { /* build config */ }
++  }
++})
++```
++
++- `command`: `'serve'` during dev, `'build'` for production
++- `mode`: `'development'` or `'production'` (or custom via `--mode`)
++
++## Async Config
++
++```ts
++export default defineConfig(async ({ command, mode }) => {
++  const data = await fetchSomething()
++  return { /* config */ }
++})
++```
++
++## Using Environment Variables in Config
++
++`.env` files are loaded **after** config resolution. Use `loadEnv` to access them in config:
++
++```ts
++import { defineConfig, loadEnv } from 'vite'
++
++export default defineConfig(({ mode }) => {
++  // Load env files from cwd, include all vars (empty prefix)
++  const env = loadEnv(mode, process.cwd(), '')
++  
++  return {
++    define: {
++      __APP_ENV__: JSON.stringify(env.APP_ENV),
++    },
++    server: {
++      port: env.APP_PORT ? Number(env.APP_PORT) : 5173,
++    },
++  }
++})
++```
++
++## Key Config Options
++
++### resolve.alias
++
++```ts
++export default defineConfig({
++  resolve: {
++    alias: {
++      '@': '/src',
++      '~': '/src',
++    },
++  },
++})
++```
++
++### define (Global Constants)
++
++```ts
++export default defineConfig({
++  define: {
++    __APP_VERSION__: JSON.stringify('1.0.0'),
++    __API_URL__: 'window.__backend_api_url',
++  },
++})
++```
++
++Values must be JSON-serializable or single identifiers. Non-strings auto-wrapped with `JSON.stringify`.
++
++### plugins
++
++```ts
++import vue from '@vitejs/plugin-vue'
++
++export default defineConfig({
++  plugins: [vue()],
++})
++```
++
++Plugins array is flattened; falsy values ignored.
++
++### server.proxy
++
++```ts
++export default defineConfig({
++  server: {
++    proxy: {
++      '/api': {
++        target: 'http://localhost:3000',
++        changeOrigin: true,
++        rewrite: (path) => path.replace(/^\/api/, ''),
++      },
++    },
++  },
++})
++```
++
++### build.target
++
++Default: Baseline Widely Available browsers. Customize:
++
++```ts
++export default defineConfig({
++  build: {
++    target: 'esnext', // or 'es2020', ['chrome90', 'firefox88']
++  },
++})
++```
++
++## TypeScript Intellisense
++
++For plain JS config files:
++
++```js
++/** @type {import('vite').UserConfig} */
++export default {
++  // ...
++}
++```
++
++Or use `satisfies`:
++
++```ts
++import type { UserConfig } from 'vite'
++
++export default {
++  // ...
++} satisfies UserConfig
++```
++
++<!--
++Source references:
++- https://vite.dev/config/
++- https://vite.dev/guide/
++-->
+diff --git a/.claude/skills/vite/references/core-features.md b/.claude/skills/vite/references/core-features.md
+new file mode 100644
+index 0000000..1403ac9
+--- /dev/null
++++ b/.claude/skills/vite/references/core-features.md
+@@ -0,0 +1,205 @@
++---
++name: vite-features
++description: Vite-specific import patterns and runtime features
++---
++
++# Vite Features
++
++## Glob Import
++
++Import multiple modules matching a pattern:
++
++```ts
++const modules = import.meta.glob('./dir/*.ts')
++// { './dir/foo.ts': () => import('./dir/foo.ts'), ... }
++
++for (const path in modules) {
++  modules[path]().then((mod) => {
++    console.log(path, mod)
++  })
++}
++```
++
++### Eager Loading
++
++```ts
++const modules = import.meta.glob('./dir/*.ts', { eager: true })
++// Modules loaded immediately, no dynamic import
++```
++
++### Named Imports
++
++```ts
++const modules = import.meta.glob('./dir/*.ts', { import: 'setup' })
++// Only imports the 'setup' export from each module
++
++const defaults = import.meta.glob('./dir/*.ts', { import: 'default', eager: true })
++```
++
++### Multiple Patterns
++
++```ts
++const modules = import.meta.glob(['./dir/*.ts', './another/*.ts'])
++```
++
++### Negative Patterns
++
++```ts
++const modules = import.meta.glob(['./dir/*.ts', '!**/ignored.ts'])
++```
++
++### Custom Queries
++
++```ts
++const svgRaw = import.meta.glob('./icons/*.svg', { query: '?raw', import: 'default' })
++const svgUrls = import.meta.glob('./icons/*.svg', { query: '?url', import: 'default' })
++```
++
++## Asset Import Queries
++
++### URL Import
++
++```ts
++import imgUrl from './img.png'
++// Returns resolved URL: '/src/img.png' (dev) or '/assets/img.2d8efhg.png' (build)
++```
++
++### Explicit URL
++
++```ts
++import workletUrl from './worklet.js?url'
++```
++
++### Raw String
++
++```ts
++import shaderCode from './shader.glsl?raw'
++```
++
++### Inline/No-Inline
++
++```ts
++import inlined from './small.png?inline'    // Force base64 inline
++import notInlined from './large.png?no-inline'  // Force separate file
++```
++
++### Web Workers
++
++```ts
++import Worker from './worker.ts?worker'
++const worker = new Worker()
++
++// Or inline:
++import InlineWorker from './worker.ts?worker&inline'
++```
++
++Preferred pattern using constructor:
++
++```ts
++const worker = new Worker(new URL('./worker.ts', import.meta.url), {
++  type: 'module',
++})
++```
++
++## Environment Variables
++
++### Built-in Constants
++
++```ts
++import.meta.env.MODE      // 'development' | 'production' | custom
++import.meta.env.BASE_URL  // Base URL from config
++import.meta.env.PROD      // true in production
++import.meta.env.DEV       // true in development
++import.meta.env.SSR       // true when running in server
++```
++
++### Custom Variables
++
++Only `VITE_` prefixed vars exposed to client:
++
++```
++# .env
++VITE_API_URL=https://api.example.com
++DB_PASSWORD=secret  # NOT exposed to client
++```
++
++```ts
++console.log(import.meta.env.VITE_API_URL) // works
++console.log(import.meta.env.DB_PASSWORD)  // undefined
++```
++
++### Mode-specific Files
++
++```
++.env                # always loaded
++.env.local          # always loaded, gitignored
++.env.[mode]         # only in specified mode
++.env.[mode].local   # only in specified mode, gitignored
++```
++
++### TypeScript Support
++
++```ts
++// vite-env.d.ts
++interface ImportMetaEnv {
++  readonly VITE_API_URL: string
++}
++
++interface ImportMeta {
++  readonly env: ImportMetaEnv
++}
++```
++
++### HTML Replacement
++
++```html
++<p>Running in %MODE%</p>
++<script>window.API = "%VITE_API_URL%"</script>
++```
++
++## CSS Modules
++
++Any `.module.css` file treated as CSS module:
++
++```ts
++import styles from './component.module.css'
++element.className = styles.button
++```
++
++With camelCase conversion:
++
++```ts
++// .my-class -> myClass (if css.modules.localsConvention configured)
++import { myClass } from './component.module.css'
++```
++
++## JSON Import
++
++```ts
++import pkg from './package.json'
++import { version } from './package.json'  // Named import with tree-shaking
++```
++
++## HMR API
++
++```ts
++if (import.meta.hot) {
++  import.meta.hot.accept((newModule) => {
++    // Handle update
++  })
++  
++  import.meta.hot.dispose((data) => {
++    // Cleanup before module is replaced
++  })
++  
++  import.meta.hot.invalidate()  // Force full reload
++}
++```
++
++<!--
++Source references:
++- https://vite.dev/guide/features
++- https://vite.dev/guide/env-and-mode
++- https://vite.dev/guide/assets
++- https://vite.dev/guide/api-hmr
++-->
+diff --git a/.claude/skills/vite/references/core-plugin-api.md b/.claude/skills/vite/references/core-plugin-api.md
+new file mode 100644
+index 0000000..c115851
+--- /dev/null
++++ b/.claude/skills/vite/references/core-plugin-api.md
+@@ -0,0 +1,235 @@
++---
++name: vite-plugin-api
++description: Vite plugin authoring with Vite-specific hooks
++---
++
++# Vite Plugin API
++
++Vite plugins extend Rolldown's plugin interface with Vite-specific hooks.
++
++## Basic Structure
++
++```ts
++function myPlugin(): Plugin {
++  return {
++    name: 'my-plugin',
++    // hooks...
++  }
++}
++```
++
++## Vite-Specific Hooks
++
++### config
++
++Modify config before resolution:
++
++```ts
++const plugin = () => ({
++  name: 'add-alias',
++  config: () => ({
++    resolve: {
++      alias: { foo: 'bar' },
++    },
++  }),
++})
++```
++
++### configResolved
++
++Access final resolved config:
++
++```ts
++const plugin = () => {
++  let config: ResolvedConfig
++  return {
++    name: 'read-config',
++    configResolved(resolvedConfig) {
++      config = resolvedConfig
++    },
++    transform(code, id) {
++      if (config.command === 'serve') { /* dev */ }
++    },
++  }
++}
++```
++
++### configureServer
++
++Add custom middleware to dev server:
++
++```ts
++const plugin = () => ({
++  name: 'custom-middleware',
++  configureServer(server) {
++    server.middlewares.use((req, res, next) => {
++      // handle request
++      next()
++    })
++  },
++})
++```
++
++Return function to run **after** internal middlewares:
++
++```ts
++configureServer(server) {
++  return () => {
++    server.middlewares.use((req, res, next) => {
++      // runs after Vite's middlewares
++    })
++  }
++}
++```
++
++### transformIndexHtml
++
++Transform HTML entry files:
++
++```ts
++const plugin = () => ({
++  name: 'html-transform',
++  transformIndexHtml(html) {
++    return html.replace(/<title>(.*?)<\/title>/, '<title>New Title</title>')
++  },
++})
++```
++
++Inject tags:
++
++```ts
++transformIndexHtml() {
++  return [
++    { tag: 'script', attrs: { src: '/inject.js' }, injectTo: 'body' },
++  ]
++}
++```
++
++### handleHotUpdate
++
++Custom HMR handling:
++
++```ts
++handleHotUpdate({ server, modules, timestamp }) {
++  server.ws.send({ type: 'custom', event: 'special-update', data: {} })
++  return [] // empty = skip default HMR
++}
++```
++
++## Virtual Modules
++
++Serve virtual content without files on disk:
++
++```ts
++const plugin = () => {
++  const virtualModuleId = 'virtual:my-module'
++  const resolvedId = '\0' + virtualModuleId
++
++  return {
++    name: 'virtual-module',
++    resolveId(id) {
++      if (id === virtualModuleId) return resolvedId
++    },
++    load(id) {
++      if (id === resolvedId) {
++        return `export const msg = "from virtual module"`
++      }
++    },
++  }
++}
++```
++
++Usage:
++
++```ts
++import { msg } from 'virtual:my-module'
++```
++
++Convention: prefix user-facing path with `virtual:`, prefix resolved id with `\0`.
++
++## Plugin Ordering
++
++Use `enforce` to control execution order:
++
++```ts
++{
++  name: 'pre-plugin',
++  enforce: 'pre',  // runs before core plugins
++}
++
++{
++  name: 'post-plugin',
++  enforce: 'post', // runs after build plugins
++}
++```
++
++Order: Alias → `enforce: 'pre'` → Core → User (no enforce) → Build → `enforce: 'post'` → Post-build
++
++## Conditional Application
++
++```ts
++{
++  name: 'build-only',
++  apply: 'build',  // or 'serve'
++}
++
++// Function form:
++{
++  apply(config, { command }) {
++    return command === 'build' && !config.build.ssr
++  }
++}
++```
++
++## Universal Hooks (from Rolldown)
++
++These work in both dev and build:
++
++- `resolveId(id, importer)` - Resolve import paths
++- `load(id)` - Load module content
++- `transform(code, id)` - Transform module code
++
++```ts
++transform(code, id) {
++  if (id.endsWith('.custom')) {
++    return { code: compile(code), map: null }
++  }
++}
++```
++
++## Client-Server Communication
++
++Server to client:
++
++```ts
++configureServer(server) {
++  server.ws.send('my:event', { msg: 'hello' })
++}
++```
++
++Client side:
++
++```ts
++if (import.meta.hot) {
++  import.meta.hot.on('my:event', (data) => {
++    console.log(data.msg)
++  })
++}
++```
++
++Client to server:
++
++```ts
++// Client
++import.meta.hot.send('my:from-client', { msg: 'Hey!' })
++
++// Server
++server.ws.on('my:from-client', (data, client) => {
++  client.send('my:ack', { msg: 'Got it!' })
++})
++```
++
++<!--
++Source references:
++- https://vite.dev/guide/api-plugin
++-->
+diff --git a/.claude/skills/vite/references/environment-api.md b/.claude/skills/vite/references/environment-api.md
+new file mode 100644
+index 0000000..006ff7f
+--- /dev/null
++++ b/.claude/skills/vite/references/environment-api.md
+@@ -0,0 +1,108 @@
++---
++name: vite-environment-api
++description: Vite 6+ Environment API for multiple runtime environments
++---
++
++# Environment API (Vite 6+)
++
++The Environment API formalizes multiple runtime environments beyond the traditional client/SSR split.
++
++## Concept
++
++Before Vite 6: Two implicit environments (`client` and `ssr`).
++
++Vite 6+: Configure as many environments as needed (browser, node server, edge server, etc.).
++
++## Basic Configuration
++
++For SPA/MPA, nothing changes—options apply to the implicit `client` environment:
++
++```ts
++export default defineConfig({
++  build: { sourcemap: false },
++  optimizeDeps: { include: ['lib'] },
++})
++```
++
++## Multiple Environments
++
++```ts
++export default defineConfig({
++  build: { sourcemap: false },  // Inherited by all environments
++  optimizeDeps: { include: ['lib'] },  // Client only
++  environments: {
++    // SSR environment
++    server: {},
++    // Edge runtime environment
++    edge: {
++      resolve: { noExternal: true },
++    },
++  },
++})
++```
++
++Environments inherit top-level config. Some options (like `optimizeDeps`) only apply to `client` by default.
++
++## Environment Options
++
++```ts
++interface EnvironmentOptions {
++  define?: Record<string, any>
++  resolve?: EnvironmentResolveOptions
++  optimizeDeps: DepOptimizationOptions
++  consumer?: 'client' | 'server'
++  dev: DevOptions
++  build: BuildOptions
++}
++```
++
++## Custom Environment Instances
++
++Runtime providers can define custom environments:
++
++```ts
++import { customEnvironment } from 'vite-environment-provider'
++
++export default defineConfig({
++  environments: {
++    ssr: customEnvironment({
++      build: { outDir: '/dist/ssr' },
++    }),
++  },
++})
++```
++
++Example: Cloudflare's Vite plugin runs code in `workerd` runtime during development.
++
++## Backward Compatibility
++
++- `server.moduleGraph` returns mixed client/SSR view
++- `ssrLoadModule` still works
++- Existing SSR apps work unchanged
++
++## When to Use
++
++- **End users**: Usually don't need to configure—frameworks handle it
++- **Plugin authors**: Use for environment-aware transformations
++- **Framework authors**: Create custom environments for their runtime needs
++
++## Plugin Environment Access
++
++Plugins can access environment in hooks:
++
++```ts
++{
++  name: 'env-aware',
++  transform(code, id, options) {
++    if (options?.ssr) {
++      // SSR-specific transform
++    }
++  },
++}
++```
++
++<!--
++Source references:
++- https://vite.dev/guide/api-environment
++- https://vite.dev/blog/announcing-vite6
++-->
+diff --git a/.claude/skills/vite/references/rolldown-migration.md b/.claude/skills/vite/references/rolldown-migration.md
+new file mode 100644
+index 0000000..28d6d76
+--- /dev/null
++++ b/.claude/skills/vite/references/rolldown-migration.md
+@@ -0,0 +1,157 @@
++---
++name: vite-rolldown
++description: Vite 8 Rolldown bundler and Oxc transformer migration
++---
++
++# Rolldown Migration (Vite 8)
++
++Vite 8 replaces esbuild+Rollup with Rolldown, a unified Rust-based bundler.
++
++## What Changed
++
++| Before (Vite 7) | After (Vite 8) |
++|-----------------|----------------|
++| esbuild (dev transform) | Oxc Transformer |
++| esbuild (dep pre-bundling) | Rolldown |
++| Rollup (production build) | Rolldown |
++| `rollupOptions` | `rolldownOptions` |
++| `esbuild` option | `oxc` option |
++
++## Performance Impact
++
++- 10-30x faster than Rollup for production builds
++- Matches esbuild's dev performance
++- Unified behavior between dev and build
++
++## Config Migration
++
++### rollupOptions → rolldownOptions
++
++```ts
++// Before (Vite 7)
++export default defineConfig({
++  build: {
++    rollupOptions: {
++      external: ['vue'],
++      output: { globals: { vue: 'Vue' } },
++    },
++  },
++})
++
++// After (Vite 8)
++export default defineConfig({
++  build: {
++    rolldownOptions: {
++      external: ['vue'],
++      output: { globals: { vue: 'Vue' } },
++    },
++  },
++})
++```
++
++### esbuild → oxc
++
++```ts
++// Before (Vite 7)
++export default defineConfig({
++  esbuild: {
++    jsxFactory: 'h',
++    jsxFragment: 'Fragment',
++  },
++})
++
++// After (Vite 8)
++export default defineConfig({
++  oxc: {
++    jsx: {
++      runtime: 'classic',
++      pragma: 'h',
++      pragmaFrag: 'Fragment',
++    },
++  },
++})
++```
++
++### JSX Configuration
++
++```ts
++export default defineConfig({
++  oxc: {
++    jsx: {
++      runtime: 'automatic',  // or 'classic'
++      importSource: 'react', // for automatic runtime
++    },
++    jsxInject: `import React from 'react'`,  // auto-inject
++  },
++})
++```
++
++### Custom Transform Targets
++
++```ts
++export default defineConfig({
++  oxc: {
++    include: ['**/*.ts', '**/*.tsx'],
++    exclude: ['node_modules/**'],
++  },
++})
++```
++
++## Plugin Compatibility
++
++Most Vite plugins work unchanged. Rolldown supports Rollup's plugin API.
++
++If a plugin only works during build:
++
++```ts
++{
++  ...rollupPlugin(),
++  enforce: 'post',
++  apply: 'build',
++}
++```
++
++## New Capabilities
++
++Rolldown unlocks features not possible before:
++
++- Full bundle mode (experimental)
++- Module-level persistent cache
++- More flexible chunk splitting
++- Module Federation support
++
++## Gradual Migration
++
++For large projects, migrate via `rolldown-vite` first:
++
++```bash
++# Step 1: Test with rolldown-vite
++pnpm add -D rolldown-vite
++
++# Replace vite import in config
++import { defineConfig } from 'rolldown-vite'
++
++# Step 2: Once stable, upgrade to Vite 8
++pnpm add -D vite@8
++```
++
++## Overriding Vite in Frameworks
++
++When framework depends on older Vite:
++
++```json
++{
++  "pnpm": {
++    "overrides": {
++      "vite": "8.0.0"
++    }
++  }
++}
++```
++
++<!--
++Source references:
++- https://vite.dev/blog/announcing-vite8-beta
++- https://vite.dev/blog/announcing-vite7
++- https://vite.dev/config/shared-options#oxc
++-->
