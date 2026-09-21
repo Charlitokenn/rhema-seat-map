@@ -1,6 +1,6 @@
 import React from 'react'
 import { ClerkProvider } from '@clerk/react'
-import { CLERK_ENABLED, CLERK_PUBLISHABLE_KEY } from '../../../../Downloads/files (2)/config.js'
+import { CLERK_ENABLED, CLERK_PUBLISHABLE_KEY } from './config.js'
 
 /**
  * AuthProvider — wraps the app in Clerk's provider (spec 0001, Build plan
