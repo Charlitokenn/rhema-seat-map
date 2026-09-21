@@ -1,6 +1,18 @@
 {
   "version": 1,
   "skills": {
+    "clerk-orgs": {
+      "source": "clerk/skills",
+      "sourceType": "github",
+      "skillPath": "skills/features/clerk-orgs/SKILL.md",
+      "computedHash": "7badf55aa6bf49f6a604387148d68e00e25b85e1a5c113339c13ce2570195ae9"
+    },
+    "clerk-react-patterns": {
+      "source": "clerk/skills",
+      "sourceType": "github",
+      "skillPath": "skills/frameworks/clerk-react-patterns/SKILL.md",
+      "computedHash": "9bbc28d1825bda0f31a33660b3e339719bc0ad2a30696dfde14ef6b9493371b0"
+    },
     "shadcn": {
       "source": "shadcn/ui",
       "sourceType": "github",
