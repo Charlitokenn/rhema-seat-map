@@ -9,21 +9,26 @@ import AuthProvider from './auth/AuthProvider.jsx'
 
 // Register service worker (vite-plugin-pwa generates virtual:pwa-register at build time)
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    import('virtual:pwa-register')
-      .then(({ registerSW }) => registerSW({ immediate: true }))
-      .catch(() => { /* not available in dev mode — safe to ignore */ })
-  })
+    window.addEventListener('load', () => {
+        import('virtual:pwa-register')
+            .then(({ registerSW }) => registerSW({ immediate: true }))
+            .catch(() => { /* not available in dev mode — safe to ignore */ })
+    })
 }
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+    // AuthProvider (ClerkProvider) is deliberately OUTSIDE StrictMode: React 18's
+    // dev-mode double-invoke of effects causes @clerk/react's script loader to
+    // poll a stale <script data-clerk-js-script> tag and time out after 15s
+    // with a ClerkRuntimeError (code: failed_to_load_clerk_js). Everything else
+    // still gets StrictMode's checks.
     <AuthProvider>
-      <QueryClientProvider client={queryClient}>
-          <TooltipProvider>
-          <App />
-          </TooltipProvider>
-      </QueryClientProvider>
+        <React.StrictMode>
+            <QueryClientProvider client={queryClient}>
+                <TooltipProvider>
+                    <App />
+                </TooltipProvider>
+            </QueryClientProvider>
+        </React.StrictMode>
     </AuthProvider>
-  </React.StrictMode>
 )

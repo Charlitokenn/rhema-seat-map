@@ -44,6 +44,7 @@ export default function App() {
 
     // ── Sign in (spec 0001: people and sign in) ─────────────────────────────
     const access    = useAccess()
+    console.log('access status', access.status)
     const clerk     = useOptionalClerk()
     const isOnline  = useOnlineStatus()
     const toast     = useUiStore(s => s.toast)
