@@ -88,9 +88,18 @@ function jsonOut(data) {
     .setMimeType(ContentService.MimeType.JSON)
 }
 
-function errOut(msg) {
-  return jsonOut({ ok: false, error: msg })
+function errOut(msg, code) {
+  var out = { ok: false, error: msg }
+  if (code) out.code = code
+  return jsonOut(out)
 }
+
+// ── Clerk-guarded actions (spec 0001) ───────────────────────────────────────
+// Guarded actions skip the shared AUTH_TOKEN check entirely and are verified
+// by requireMember_ (apps-script/ClerkAuth.gs) against a Clerk session token
+// instead. Existing actions (saveServiceSummary, getSummaries, healthCheck)
+// keep the shared token exactly as before.
+var GUARDED_ACTIONS = { me: true }
 
 // ── GET handler ───────────────────────────────────────────────────────────────
 function doGet(e) {
@@ -118,9 +127,6 @@ function doGet(e) {
 
 // ── POST handler ──────────────────────────────────────────────────────────────
 function doPost(e) {
-  var token = (e.parameter && e.parameter.token) || ''
-  if (!isAuthorized(token)) return errOut('Unauthorized')
-
   // e.postData.contents holds the raw request body as a string.
   // This works for both Content-Type: application/json and text/plain —
   // GAS does not filter by content-type.
@@ -137,10 +143,19 @@ function doPost(e) {
 
   var action = body.action || ''
 
+  // Guarded actions (Clerk) skip the shared token; everything else keeps it.
+  if (!GUARDED_ACTIONS[action]) {
+    var token = (e.parameter && e.parameter.token) || ''
+    if (!isAuthorized(token)) return errOut('Unauthorized')
+  }
+
   try {
     switch (action) {
       case 'saveServiceSummary':
         return jsonOut(saveServiceSummary(body))
+
+      case 'me':
+        return jsonOut(handleMe_(body))
 
       default:
         return errOut('Unknown POST action: ' + action)
@@ -148,6 +163,23 @@ function doPost(e) {
   } catch (err) {
     console.error('doPost error:', err)
     return errOut('Server error: ' + err.message)
+  }
+}
+
+/**
+ * handleMe_ — POST { action: 'me', authToken }.
+ * Verifies the Clerk session token and, on success, tells the caller who
+ * they are for this request only (never written to the Sheet or logs).
+ * On failure, logs a denial (reason code + user id only) and returns the
+ * shape the client expects: { ok:false, error, code }.
+ */
+function handleMe_(body) {
+  try {
+    var user = requireMember_(body.authToken)
+    return { ok: true, user: user }
+  } catch (err) {
+    logAuthDenial_(err.reason || 'malformed', err.userId || 'unknown')
+    return { ok: false, error: err.message || 'Unauthorized', code: err.code || 'unauthenticated' }
   }
 }
 
@@ -250,6 +282,46 @@ function getSummaries() {
     .reverse()  // most recent first
 
   return { summaries: summaries, count: summaries.length }
+}
+
+// ── Clerk auth denial log (spec 0001, AC-9) ─────────────────────────────────
+// Same SyncLog tab, same columns. At most 30 individual rows per hour; past
+// that, one running "rate_limited" summary row per hour holds the total —
+// never a name or an email, only the reason code and the caller's user id.
+var CLERK_DENY_CACHE_PREFIX = 'clerk_deny_'
+var CLERK_DENY_CAP_PER_HOUR = 30
+
+function logAuthDenial_(reason, userId) {
+  try {
+    var cache = CacheService.getScriptCache()
+    var hourBucket = Math.floor(Date.now() / 3600000)
+    var countKey = CLERK_DENY_CACHE_PREFIX + 'count_' + hourBucket
+    var rowKey = CLERK_DENY_CACHE_PREFIX + 'row_' + hourBucket
+
+    var count = Number(cache.get(countKey) || 0) + 1
+    cache.put(countKey, String(count), 3700) // a little past the hour, so a slow last call still lands
+
+    var ss = getSpreadsheet()
+
+    if (count <= CLERK_DENY_CAP_PER_HOUR) {
+      appendLog(ss, 'auth_denied:' + reason, userId, 1)
+      return
+    }
+
+    var suppressedTotal = count - CLERK_DENY_CAP_PER_HOUR
+    var existingRow = Number(cache.get(rowKey) || 0)
+    var sheet = getOrCreateSheet(ss, SHEET_NAMES.LOG, ['timestamp', 'isoDate', 'operation', 'entityId', 'count'])
+
+    if (existingRow) {
+      sheet.getRange(existingRow, 5).setValue(suppressedTotal) // the 'count' column
+    } else {
+      appendLog(ss, 'auth_denied:rate_limited', 'unknown', suppressedTotal)
+      cache.put(rowKey, String(sheet.getLastRow()), 3700)
+    }
+  } catch (e) {
+    // A logging failure never blocks the actual allow/deny decision.
+    console.warn('Auth denial log failed:', e.message)
+  }
 }
 
 // ── Audit log ─────────────────────────────────────────────────────────────────

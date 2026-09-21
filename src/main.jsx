@@ -5,6 +5,7 @@ import App from './App.jsx'
 import { queryClient } from './lib/queryClient.js'
 import './globals.css'
 import { TooltipProvider } from "@/components/ui/tooltip"
+import AuthProvider from './auth/AuthProvider.jsx'
 
 // Register service worker (vite-plugin-pwa generates virtual:pwa-register at build time)
 if ('serviceWorker' in navigator) {
@@ -17,10 +18,12 @@ if ('serviceWorker' in navigator) {
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <QueryClientProvider client={queryClient}>
-        <TooltipProvider>
-        <App />
-        </TooltipProvider>
-    </QueryClientProvider>
+    <AuthProvider>
+      <QueryClientProvider client={queryClient}>
+          <TooltipProvider>
+          <App />
+          </TooltipProvider>
+      </QueryClientProvider>
+    </AuthProvider>
   </React.StrictMode>
 )

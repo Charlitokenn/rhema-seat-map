@@ -14,8 +14,16 @@ const TOKEN    = import.meta.env.VITE_GAS_TOKEN  || ''
  * gasRequest
  * @param {'GET'|'POST'} method
  * @param {object}       params  — query params (GET) or body payload (POST)
+ * @param {object}       [opts]
+ * @param {boolean}      [opts.throwOnError=true] — set false to get the raw
+ *   `{ ok:false, error, code }` payload back instead of a thrown Error (used
+ *   by Clerk-guarded actions, which need `code` to tell a "not in the
+ *   organization" response apart from a real failure). Default behaviour is
+ *   unchanged, so every existing caller keeps throwing exactly as before.
  */
-export async function gasRequest(method, params = {}) {
+export async function gasRequest(method, params = {}, opts = {}) {
+  const { throwOnError = true } = opts
+
   if (!BASE_URL) {
     throw new Error(
       'VITE_GAS_URL is not set. Add it to .env.local and restart the dev server.'
@@ -45,7 +53,7 @@ export async function gasRequest(method, params = {}) {
     clearTimeout(timer)
     if (!res.ok) throw new Error(`HTTP ${res.status} from Apps Script`)
     const data = await res.json()
-    if (data.error) throw new Error(data.error)
+    if (data.error && throwOnError) throw new Error(data.error)
     return data
   } catch (err) {
     clearTimeout(timer)

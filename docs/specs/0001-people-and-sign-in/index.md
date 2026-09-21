@@ -1,7 +1,7 @@
 # 0001. People and sign in
 
 **Date**: 2026-09-21
-**Status**: Proposed
+**Status**: In Progress
 
 ## Summary
 
@@ -161,15 +161,15 @@ Client surface (React app), new folder `src/auth/`:
 
 Ordered for the Tracer Bullet approach: first one thin real thread (Clerk configuration, backend check, client sign in, header), then the edge states around it.
 
-1. Do the Clerk dashboard prerequisites and record the publishable key, issuer address and organization id, satisfies **AC-1**, **AC-2**, **AC-8**.
-2. Backend verifier in its own Apps Script file: token parsing, key fetch and cache, BigInt `RS256` check, claim checks and reason codes. Node tests for every case in AC-11, satisfies **AC-3**, **AC-11**.
-3. Wire the `me` action and `requireMember_` into `Code.gs` (guarded actions skip the shared token check, existing actions keep it), add the three Script Properties, and log refusals to `SyncLog` in the existing columns with codes and user ids only, capped at 30 rows an hour with one summary row, satisfies **AC-3**, **AC-4**, **AC-9**.
-4. Client thin thread: install `@clerk/react`, add `AuthProvider`, `authFetch` and `useAccess`, and create `.env.example` with the new variable, satisfies **AC-1**, **AC-4**, **AC-8**.
-5. Header: logo as a button with the three tap rules, `UserButton` when signed in, sign in modal for a signed out tap, satisfies **AC-1**, **AC-5**.
-6. Access states: the not in the organization message with Sign out, the session ended message when the token cannot refresh, and the offline and loading toasts when Clerk is not ready. Confirm the exact Clerk call that reports a pending session with the installed `clerk-orgs` and `clerk-react-patterns` skills before coding, satisfies **AC-2**, **AC-10**, **AC-12**.
-7. Walk the admin path in Clerk's screen: invite a person, accept, remove, and confirm the cutoff, satisfies **AC-6**.
-8. Regression pass with no sign in: seat map, Submit and analytics, satisfies **AC-7**.
-9. Prove the configuration only move to another Clerk instance by changing values, and write the switch steps down, satisfies **AC-8**.
+1. [ ] Do the Clerk dashboard prerequisites and record the publishable key, issuer address and organization id, satisfies **AC-1**, **AC-2**, **AC-8**. _Not done — this is a manual step in Clerk's dashboard, outside what `/develop` can do; see the report below._
+2. [x] Backend verifier in its own Apps Script file: token parsing, key fetch and cache, BigInt `RS256` check, claim checks and reason codes. Node tests for every case in AC-11, satisfies **AC-3**, **AC-11**. Built in `apps-script/ClerkAuth.gs`; all 24 cases pass under `node --test apps-script/ClerkAuth.test.js`.
+3. [x] Wire the `me` action and `requireMember_` into `Code.gs` (guarded actions skip the shared token check, existing actions keep it), add the three Script Properties, and log refusals to `SyncLog` in the existing columns with codes and user ids only, capped at 30 rows an hour with one summary row, satisfies **AC-3**, **AC-4**, **AC-9**.
+4. [x] Client thin thread: install `@clerk/react`, add `AuthProvider`, `authFetch` and `useAccess`, and create `../../../../../Downloads/files (2)/.env.example` with the new variable, satisfies **AC-1**, **AC-4**, **AC-8**.
+5. [x] Header: logo as a button with the three tap rules, `UserButton` when signed in, sign in modal for a signed out tap, satisfies **AC-1**, **AC-5**.
+6. [x] Access states: the not in the organization message with Sign out, the session ended message when the token cannot refresh, and the offline and loading toasts when Clerk is not ready. Built against `useAuth({ treatPendingAsSignedOut: false })` and `sessionStatus`, confirmed against Clerk's current public docs since `clerk-orgs`/`clerk-react-patterns` are not installed in this repo — worth a quick human check once real sign-in is live, satisfies **AC-2**, **AC-10**, **AC-12**.
+7. [ ] Walk the admin path in Clerk's screen: invite a person, accept, remove, and confirm the cutoff, satisfies **AC-6**. _Needs a live Clerk organization and a phone — not done._
+8. [ ] Regression pass with no sign in: seat map, Submit and analytics, satisfies **AC-7**. _`npm run build` succeeds with the new code in place; a live-device pass is still worth doing._
+9. [ ] Prove the configuration only move to another Clerk instance by changing values, and write the switch steps down, satisfies **AC-8**. _Needs a second live Clerk instance — not done._
 
 ## Consequences
 
